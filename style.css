@@ -1,0 +1,57 @@
+@import url("https://fonts.google.com/share?selection.family=Poppins:wght@100");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: solid 1px #00ff15; */
+}
+
+.header {
+    /* background-image: url("chicken-background.webp"); */
+    /* background-blend-mode: darken; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    background-color: rgb(29, 28, 28);
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: transparent;
+    font-family: "Popins", sans-serif;
+}
+
+nav h1 {
+    font-size: 3rem;
+    padding: .5rem;
+    color: white;
+    text-shadow: crimson 2px 2px 4px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: rgb(131, 131, 131);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: 500ms ease;
+    padding: 0 5px 0 5px;
+    border-radius: .5rem;
+}
+
+nav ul li a:hover {
+    background: crimson;
+    color: white;
+}
