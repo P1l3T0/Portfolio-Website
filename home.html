@@ -2,15 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer href="main.js"></script>
 </head>
 
 <body>
-    <div class="header">
+    <div id="header">
         <div class="header-container">
             <nav>
                 <h1>P1l3T0</h1>
@@ -21,6 +22,63 @@
                     <li><a href="#" class="contacts">contacts</a></li>
                 </ul>
             </nav>
+
+            <div class="header-text">
+                <p>I have no clue what i'm doing 💀</p>
+                <h1>
+                    Hello,<br />
+                    I'm <span>P1l3T0</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="hentie.webp" alt="" />
+                </div>
+                <div class="about-col2">
+                    <h1>About <span>me</span></h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
+                        ullam aut quisquam asperiores veniam similique. Quas optio sint
+                        aliquam, odio doloremque accusamus placeat officiis dolorum modi
+                        corrupti nostrum consectetur iure?
+                    </p>
+
+                    <div class="title-cards">
+                        <p class="title-link active-link" onclick="openTab('education')">education</p>
+                        <p class="title-link" onclick="openTab('skills')">skills</p>
+                        <p class="title-link" onclick="openTab('experience')">experience</p>
+                    </div>
+
+                    <div class="title-content active-title" id="education">
+                        <ul>
+                            <li><span>2021 - current</span><br>
+                                Technical University of Sofia</li>
+                            <li><span>2016 - 2021</span><br>
+                                PPMG Sliven</li>
+                        </ul>
+                    </div>
+
+                    <div class="title-content" id="skills">
+                        <ul>
+                            <li><span>ayo what do i type for skills</span><br>
+                                Technical University of Sofia</li>
+                        </ul>
+                    </div>
+
+                    <div class="title-content" id="experience">
+                        <ul>
+                            <li><span>Software developer</span><br>
+                                Currently with 0 years of proffesional experience :skull:</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </body>
