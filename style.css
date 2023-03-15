@@ -43,14 +43,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(189, 189, 189);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 800;
     padding: 0 5px 0 5px;
-    border-radius: .5rem;
     transition: 500ms ease;
+    cursor: pointer;
 }
 
 nav ul li a:hover {
@@ -128,6 +128,7 @@ nav ul li a:hover {
 }
 
 .title-link {
+    cursor: pointer;
     margin: .3rem 1rem;
     text-transform: uppercase;
     transition: 500ms ease;
@@ -148,6 +149,8 @@ nav ul li a:hover {
 
 .title-content {
     display: none;
+    height: 100vh;
+    width: auto;
 }
 
 .title-content ul li {
@@ -165,6 +168,6 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
-.title-content.active-title {
+.title-content.active-content {
     display: block;
 }
