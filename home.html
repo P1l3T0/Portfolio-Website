@@ -11,15 +11,17 @@
 </head>
 
 <body>
+    <!-- !main section -->
+
     <div id="header">
         <div class="header-container">
             <nav>
                 <h1>P1l3T0</h1>
 
                 <ul>
-                    <li><a href="#" class="about">about</a></li>
-                    <li><a href="#" class="projects">projects</a></li>
-                    <li><a href="#" class="contacts">contacts</a></li>
+                    <li><a href="#about" class="about">about</a></li>
+                    <li><a href="#projects" class="projects">projects</a></li>
+                    <li><a href="#contacts" class="contacts">contacts</a></li>
                 </ul>
             </nav>
 
@@ -32,6 +34,8 @@
         </div>
     </div>
 
+    <!-- !about section -->
+
     <div id="about">
         <div class="container">
             <div class="row">
@@ -40,7 +44,7 @@
                 </div>
                 <div class="about-col2">
                     <h1>About <span>me</span></h1>
-                    <p>
+                    <p class="about-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
                         ullam aut quisquam asperiores veniam similique. Quas optio sint
                         aliquam, odio doloremque accusamus placeat officiis dolorum modi
@@ -48,30 +52,30 @@
                     </p>
 
                     <div class="title-cards">
-                        <p class="title-link active-link" onclick="openTab('education')">education</p>
-                        <p class="title-link" onclick="openTab('skills')">skills</p>
+                        <p class="title-link active-link" onclick="openTab('skills')">skills</p>
+                        <p class="title-link" onclick="openTab('education')">education</p>
                         <p class="title-link" onclick="openTab('experience')">experience</p>
                     </div>
 
-                    <div class="title-content active-content" id="education">
+                    <div class="title-content active-content" id="skills">
+                        <ul>
+                            <li><span>.NET framework</span><br>
+                                2nd best C# dev out there (sled bojko)</li>
+                            <li><span>front-end enjoyer</span><br>
+                                HTML CSS and JS my beloved</li>
+                            <li><span>epic gamer</span><br>
+                                Best Minecraft speedrunner</li>
+                            <li><span>certified weeb</span><br>
+                                I own a katana</li>
+                        </ul>
+                    </div>
+
+                    <div class="title-content" id="education">
                         <ul>
                             <li><span>2021 - current</span><br>
                                 Technical University of Sofia</li>
                             <li><span>2016 - 2021</span><br>
                                 PPMG Sliven</li>
-                        </ul>
-                    </div>
-
-                    <div class="title-content" id="skills">
-                        <ul>
-                            <li><span>.NET dramework</span><br>
-                                Best C# dev out there</li>
-                            <li><span>front-end prodege</span><br>
-                                Best C# dev out there</li>
-                            <li><span>epic gamer</span><br>
-                                Best Minecraft speedrunner</li>
-                            <li><span>certified weeb</span><br>
-                                I own a katana</li>
                         </ul>
                     </div>
 
@@ -81,7 +85,23 @@
                                 Currently with 0 years of proffesional experience :skull:</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- !projects section -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projectss</h1>
+
+            <div class="work-lsit">
+                <div class="work">
+                    <img src="chicken-website.webp" alt="">
+                </div>
+                <div class="work">
+                    <img src="hentie.webp" alt="">
                 </div>
             </div>
         </div>

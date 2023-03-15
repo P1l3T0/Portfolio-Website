@@ -6,11 +6,12 @@
     padding: 0;
     color: white;
     font-family: "Popins", sans-serif;
-    /* outline: solid 1px #00ff15; */
+    scroll-behavior: smooth !important;
+    outline: solid 1px #00ff15;
 }
 
 body {
-    background-color: #333;
+    background-color:rgb(25,29,32);
 }
 
 #header {
@@ -27,13 +28,12 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: transparent;
-
 }
 
 nav h1 {
     font-size: 3rem;
     padding: 1rem;
-    text-shadow: crimson 2px 2px 4px;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
 }
 
 nav ul li {
@@ -43,23 +43,25 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(255, 255, 255);
+    color: white;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 800;
     padding: 0 5px 0 5px;
-    transition: 500ms ease;
+    transition: 1s ease;
     cursor: pointer;
 }
 
 nav ul li a:hover {
-    background: rgb(119, 3, 26);
-    color: white;
+    background: white;
+    color: rgb(25,29,32);
+    text-shadow: none;
 }
 
 .header-text {
-    margin-top: 15%;
+    margin-top: 17%;
     padding: 0 4rem;
 }
 
@@ -78,11 +80,14 @@ nav ul li a:hover {
     color: crimson;
 }
 
-/* !about */
+
+/* !about section */
+
 
 #about {
     padding: 5rem;
     color: #ababab;
+    height: 90vh;
 }
 
 .row {
@@ -114,17 +119,21 @@ nav ul li a:hover {
 }
 
 .about-col1 img {
-    width: 100%;
-    height: auto;
+    width: 40rem;
+    height: 40rem;
     border-radius: 2rem;
     padding: 1rem;
+}
+
+.about-text {
+    margin: 3rem 0;
 }
 
 /* ? education, experience i skills nadpisite */
 
 .title-cards {
     display: flex;
-    margin: 1rem 0;
+    margin: 0 0 2rem 0;
 }
 
 .title-link {
@@ -138,7 +147,7 @@ nav ul li a:hover {
 }
 
 .title-link:hover {
-    color: crimson;
+    color: rgb(255, 0, 51);
 }
 
 .title-link.active-link  {
@@ -149,7 +158,7 @@ nav ul li a:hover {
 
 .title-content {
     display: none;
-    height: 100vh;
+    height: 50vh;
     width: auto;
 }
 
@@ -169,5 +178,32 @@ nav ul li a:hover {
 }
 
 .title-content.active-content {
+    display: block;
+}
+
+
+/* !projects section */
+
+
+#projects {
+    padding: 3rem 0 3rem 3rem;
+}
+
+.work-lsit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+    margin-top: 3rem
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
     display: block;
 }
