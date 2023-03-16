@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <script defer src="main.js"></script>
 </head>
 
@@ -112,39 +112,61 @@
     <div id="projects">
         <div class="container">
             <h1 class="sub-title"><span>My</span> Projects</h1>
-
-            <div class="work-lsit">
-                <div class="project">
-                    <h1>Chicken website</h1>
-                    <div class="work">
-                        <img src="../pictures/chicken-website.webp" />
-                        <div class="layer">
-                            <h3>Website for chicken</h3>
-                            <p>
-                                This website was created as part of an Internet-Based
-                                Technologies university course project using HTML, CSS,
-                                JavaScript, and PHP for the client and server-side
-                                functionalities.
-                            </p>
-                            <a href="https://github.com/P1l3T0/2D-Shape-Editor">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../pictures/chicken-website.webp" />
+                    <div class="layer">
+                        <h1>Chicken Website</h1>
+                        <p>Website for showcasing information / photos about chicken,
+                            created with HTML, CSS JavaScript and PHP
+                        </p>
+                        <a href="https://github.com/P1l3T0/Chicken-Website" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="project">
-                    <h1>2D shape editor</h1>
-                    <div class="work">
-                        <img src="../pictures/paint.webp" />
-                        <div class="layer">
-                            <h3>Website for chicken</h3>
-                            <p>
-                                The application provides functions for drawing/working with 2D
-                                shapes, saving information to and opening from files
-                            </p>
-                            <a href="https://github.com/P1l3T0/Chicken-Website">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
+                <div class="work">
+                    <img src="../pictures/paint.webp" />
+                    <div class="layer">
+                        <h1>2D Shape Editor</h1>
+                        <p>
+                            Application for creating and drawing 2D figures using vector graphics,
+                            created using C#
+                        </p>
+                        <a href="https://github.com/P1l3T0/2D-Shape-Editor" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- !contact section -->
+
+    <div id="contacts">
+        <div class="contaier">
+            <div class="row">
+                <div class="contacts-left">
+                    <h1 class="sub-title">Contact <span>me</span></h1>
+                    <p><i class="fa-sharp fa-regular fa-paper-plane"></i> Pileshkiq@gmail.com</p>
+
+                    <div class="social-icons">
+                        <a href="https://github.com/P1l3T0" target="_blank">
+                            <i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vasil-ganev-2507a3210/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/punisher_waffle" target="_blank">
+                            <i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kmetanasliven/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contacts-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="name" required>
+                        <input type="email" name="email" placeholder="email" required>
+                        <textarea name="message" rows="6" placeholder="your message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
             </div>
         </div>
