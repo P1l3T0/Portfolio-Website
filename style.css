@@ -188,6 +188,7 @@ nav ul li a:hover {
 #projects {
     padding: 3rem;
     text-align: center;
+    height: 100vh;
 }
 
 .sub-title {
@@ -279,9 +280,13 @@ nav ul li a:hover {
 
 /* !contacts */
 
+#contacts {
+    height: 100vh;
+}
 
 .contacts-left {
     flex-basis: 35%;
+    margin: 2rem;
 }
 
 .contacts-right {
@@ -289,24 +294,24 @@ nav ul li a:hover {
 }
 
 .contacts-left p {
-    margin: 2rem 0 0 0;
+    margin: 1rem;
+    font-size: 3rem;
 }
 
 .contacts-left p i {
     color: crimson;
-    margin: 0 1rem 0 0;
     font-size: 2.4rem;
 }
 
 .social-icons {
-    margin: 2rem 0 0 0;
+    margin: 3rem 0 0 0;
     font-size: 2.5rem;
 }
 
 .social-icons a {
     text-decoration: none;
     display: inline-block;
-    margin: 0 0rem 0 1rem;
+    margin: 0 1rem;
 }
 
 .social-icons a i {
@@ -315,4 +320,102 @@ nav ul li a:hover {
 
 .social-icons a i:hover {
     color: crimson;
+    transform: translateY(-5px);
+}
+
+.button {
+    font-size: 2rem;
+    font-weight: 800;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+    display: block;
+    margin: 3rem auto;
+    width: fit-content;
+    border: 2px solid crimson;
+    padding: 1rem;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 500ms ease;
+}
+
+.button:hover {
+    background-color: crimson;
+}
+
+.button.button2 {
+    display: inline-block;
+}
+
+/* ? submit form */
+
+.contacts-right form {
+    width: 100%;
+    margin-top: 2rem;
+    color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    border: 0;
+    outline: none;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: rgb(38, 47, 54);;
+    color: white;
+    font-size: 1rem;
+    border-radius: 6px;
+    resize: none;
+}
+
+form .submit-button {
+    padding: 1rem 1rem;
+    margin-top: 1.25rem;
+}
+
+.submit-button {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: .5rem;
+    margin: 3rem auto;
+    border-radius: 15px;
+    border: 2px solid crimson;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+    display: block;
+    width: fit-content;
+    text-transform: uppercase;
+    transition: 500ms ease;
+    background-color: transparent;
+}
+
+.submit-button:hover {
+    background-color: crimson;
+}
+
+
+/* ! small screen */
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url("../pictures/phone-background.webp");
+    }
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 1rem;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
 }
