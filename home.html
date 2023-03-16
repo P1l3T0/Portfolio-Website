@@ -19,12 +19,13 @@
             <nav>
                 <h1>P1l3T0</h1>
 
-                <ul>
+                <ul id="side-menu">
                     <li><a href="#about" class="about">about</a></li>
                     <li><a href="#projects" class="projects">projects</a></li>
                     <li><a href="#contacts" class="contacts">contacts</a></li>
-                    <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
+                    <i class="fa-regular fa-rectangle-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
 
             <div class="header-text">
@@ -38,12 +39,12 @@
 
     <div id="about">
         <div class="container">
+            <h1 class="sub-title">About <span>me</span></h1>
             <div class="row">
                 <div class="about-col1">
                     <img src="../pictures/hentie.webp" alt="" />
                 </div>
                 <div class="about-col2">
-                    <h1>About <span>me</span></h1>
                     <p class="about-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
                         ullam aut quisquam asperiores veniam similique. Quas optio sint
@@ -52,13 +53,9 @@
                     </p>
 
                     <div class="title-cards">
-                        <p class="title-link active-link" onclick="openTab('skills')">
-                            skills
-                        </p>
+                        <p class="title-link active-link" onclick="openTab('skills')">skills</p>
                         <p class="title-link" onclick="openTab('education')">education</p>
-                        <p class="title-link" onclick="openTab('experience')">
-                            experience
-                        </p>
+                        <p class="title-link" onclick="openTab('experience')">experience</p>
                     </div>
 
                     <div class="title-content active-content" id="skills">
@@ -128,9 +125,9 @@
                 <div class="work">
                     <img src="../pictures/paint.webp" />
                     <div class="layer">
-                        <h1>2D Shape Editor</h1>
+                        <h1>Shape Editor</h1>
                         <p>
-                            Application for creating 2D figures and drawing with freehand
+                            Application for creating 2D shapes and drawing with freehand
                             using vector graphics, created using C# and Windows Forms
                         </p>
                         <a href="https://github.com/P1l3T0/2D-Shape-Editor" target="_blank">
@@ -145,9 +142,9 @@
 
     <div id="contacts">
         <div class="contaier">
+            <h1 class="sub-title">Contact <span>me</span></h1>
             <div class="row">
                 <div class="contacts-left">
-                    <h1 class="sub-title">Contact <span>me</span></h1>
                     <p><i class="fa-sharp fa-regular fa-paper-plane"></i> vgan3v@gmail.com</p>
 
                     <div class="social-icons">
