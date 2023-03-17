@@ -102,7 +102,6 @@ nav ul li a:hover {
 
 #about {
     padding: 5rem;
-
 }
 
 #about .container h1 {
@@ -298,9 +297,7 @@ nav ul li a:hover {
 
 /* !contacts */
 
-.contaier .sub-title {
-    text-align: center;
-}
+
 
 .contacts-left {
     flex-basis: 45%;
@@ -328,7 +325,7 @@ nav ul li a:hover {
 .social-icons a {
     text-decoration: none;
     display: inline-block;
-    margin: 0 1rem;
+    margin: 0 1rem 0 0;
 }
 
 .social-icons a i {
@@ -345,7 +342,8 @@ nav ul li a:hover {
     font-weight: 800;
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
     display: block;
-    margin: 3rem auto;
+    text-align: center;
+    margin: 3rem 0 0 0;
     width: fit-content;
     border: 2px solid crimson;
     padding: 1rem;
@@ -359,8 +357,9 @@ nav ul li a:hover {
     background-color: crimson;
 }
 
-.button.button2 {
-    display: inline-block;
+.submit-button.submit-button2 {
+    display: flex;
+    
 }
 
 /* ? submit form */
@@ -404,7 +403,6 @@ form .submit-button {
     font-size: 2rem;
     font-weight: 800;
     padding: .5rem;
-    margin: 3rem auto;
     border-radius: 15px;
     border: 2px solid crimson;
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
@@ -415,12 +413,16 @@ form .submit-button {
     background-color: transparent;
 }
 
+
 .submit-button:hover {
     background-color: crimson;
 }
 
 
+
 /* ! small screen */
+
+
 
 nav .fa-regular,
 nav .fa-solid {
@@ -615,5 +617,10 @@ nav .fa-solid {
         align-items: center;
         text-align: center;
         margin: 0;
+    }
+
+    .submit-button,
+    .button {
+        margin: 3rem auto;
     }
 }
