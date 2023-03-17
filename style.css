@@ -440,26 +440,17 @@ form .submit-button {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin: 4rem 0 0 0;
-    padding-top: 1.25rem;
+    padding: 1.25rem;
     background-color: rgb(29, 36, 41);
-    border-top: 1px solid rgb(29, 32, 41);
-    ;
+    border-top: 1px solid rgb(29, 32, 50);
     text-shadow: 3px 3px 5px rgb(24, 24, 24);
 }
 
 .footer-content h3 {
     font-family: "Popins", sans-serif;
     color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
-}
-
-.copyright {
-    font-family: 'Golos Text', sans-serif;
-    font-style: italic;
-    font-size: 1rem;
-    margin: 1rem auto;
 }
 
 
@@ -678,7 +669,7 @@ nav .fa-solid {
     #contacts {
         height: auto;
     }
-    
+
     .contacts-left,
     .contacts-right {
         flex-basis: 100%;
