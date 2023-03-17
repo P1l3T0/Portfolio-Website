@@ -40,6 +40,7 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 0 1rem;
+    transition: 500ms ease;
 }
 
 nav ul li a {
@@ -54,10 +55,12 @@ nav ul li a {
     cursor: pointer;
 }
 
+nav ul li:hover {
+    transform: translateY(-5px);
+}
+
 nav ul li a:hover {
-    background: white;
-    color: rgb(25,29,32);
-    text-shadow: none;
+    color: crimson;
 }
 
 .header-text {
@@ -90,8 +93,11 @@ nav ul li a:hover {
 
 #about {
     padding: 5rem;
-    color: #ababab;
-    /* height: 90vh; */
+
+}
+
+#about .container h1 {
+    text-align: center;
 }
 
 .row {
@@ -111,6 +117,7 @@ nav ul li a:hover {
 
 .about-col2 {
     flex-basis: 60%;
+    width: 100%;
 }
 
 .about-col2 h1 span {
@@ -215,7 +222,7 @@ nav ul li a:hover {
 }
 
 .work img {
-    width: 50rem;
+    width: 100%;
     height: 40rem;
     border-radius: 10px;
     display: block;
@@ -281,6 +288,10 @@ nav ul li a:hover {
 
 #contacts {
     height: 100vh;
+}
+
+#contacts .contaier {
+    margin-top: 5rem;
 }
 
 .contaier .sub-title {
@@ -465,6 +476,14 @@ nav .fa-solid {
         cursor: pointer;
     }
 
+    .fa-bars {
+        cursor: pointer;
+    } 
+
+
+    /* !about */
+
+
     .sub-title {
         font-size: 4rem;
     }
@@ -479,10 +498,22 @@ nav .fa-solid {
     }
 
     .about-col2 .about-text {
-        font-size: .5rem;
+        font-size: 2rem;
     }
 
+    .title-cards {
+        display: block;
+        margin: 0 0 2rem 0;
+        text-align: center;
+    }
+    
+    .title-link {
+        margin: 0;
+    }
+
+
     /* !projects */
+
 
     .layer p {
         font-size: 1.5rem;
