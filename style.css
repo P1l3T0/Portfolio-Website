@@ -7,7 +7,13 @@
     color: white;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 1px #00ff15;  */
+    outline: solid 1px #00ff15; 
+}
+
+#about,
+#contacts,
+#projects {
+    padding: 2rem;
 }
 
 .container h1 {
@@ -101,13 +107,6 @@ nav ul li a:hover {
 
 
 
-#about {
-    padding: 5rem;
-}
-
-#about .container h1 {
-    text-align: center;
-}
 
 .row {
     display: flex;
@@ -302,7 +301,7 @@ nav ul li a:hover {
 
 
 #contacts {
-    height: 75vh;
+    height: 85vh;
 }
 
 
@@ -392,9 +391,8 @@ form textarea {
     border: 0;
     outline: none;
     padding: 1rem;
-    margin: 1rem 0;
+    margin: 0 0 1.5rem 0 ;
     background: rgb(38, 47, 54);
-    ;
     color: white;
     font-size: 1rem;
     border-radius: 6px;
@@ -644,6 +642,10 @@ nav .fa-solid {
 
     .title-link {
         margin: 1rem 0 0 0;
+    }
+
+    .about-text {
+        margin: 2rem 0 2rem 0;
     }
 
 
