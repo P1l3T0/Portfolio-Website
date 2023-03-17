@@ -35,7 +35,7 @@
     const paint = document.getElementById('paint');
 
     function changeImageSrc() {
-        if (window.innerWidth < 620) {
+        if (window.innerWidth < 1000) {
             chickenWebsite.src = '../pictures/chicken-website-mobile.webp';
             paint.src = '../pictures/paint-mobile.webp';
         } else {

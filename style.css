@@ -10,6 +10,11 @@
     /* outline: solid 1px #00ff15;  */
 }
 
+.container h1 {
+    margin: 3rem 0 3rem 0;
+    text-align: center;
+}
+
 body {
     background-color:rgb(25,29,32);
 }
@@ -88,7 +93,11 @@ nav ul li a:hover {
 }
 
 
+
+
 /* !about section */
+
+
 
 
 #about {
@@ -189,7 +198,11 @@ nav ul li a:hover {
 }
 
 
+
+
 /* !projects section */
+
+
 
 
 #projects {
@@ -211,14 +224,12 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 3rem;
-    margin-top: 5rem;
 }
 
 .work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    
 }
 
 .work img {
@@ -284,15 +295,8 @@ nav ul li a:hover {
 }
 
 
+
 /* !contacts */
-
-#contacts {
-    height: 100vh;
-}
-
-#contacts .contaier {
-    margin-top: 5rem;
-}
 
 .contaier .sub-title {
     text-align: center;
@@ -424,11 +428,17 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 850px) {
+    /* !header */
+    
     nav .fa-regular,
     nav .fa-solid {
     display: block;
     font-size: 1.5rem;
 }
+
+    .container {
+        text-align: center;
+    }
 
     #header {
         background-image: url("../pictures/phone-background.webp");
@@ -464,8 +474,87 @@ nav .fa-solid {
     }
 
     nav ul li a:hover {
-        background: transparent;
         color: white;
+        background: transparent;
+        text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+    }
+
+    nav ul .fa-regular {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        cursor: pointer;
+    }
+
+    .fa-bars {
+        cursor: pointer;
+    } 
+
+    /* !contacts */
+
+    .contacts-left h1 {
+        font-size: 5rem;
+    }
+
+    .contacts-left p {
+        font-size: 2.5rem;
+    }
+
+    .contacts-left,
+    .contacts-right {
+        flex-basis: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav .fa-regular,
+    nav .fa-solid {
+    display: block;
+    font-size: 1.5rem;
+}
+
+    .container {
+        text-align: center;
+    }
+
+    #header {
+        background-image: url("../pictures/phone-background.webp");
+    }
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 1rem;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        background-color:rgb(44, 56, 65);
+        position: fixed;
+        top: 0;
+        right: -13rem;
+        width: 13rem;
+        height: 100vh;
+        padding-top: 3rem;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a:hover {
+        color: white;
+        background: transparent;
         text-shadow: rgb(0, 0, 0) 3px 3px 5px;
     }
 
@@ -503,12 +592,11 @@ nav .fa-solid {
 
     .title-cards {
         display: block;
-        margin: 0 0 2rem 0;
-        text-align: center;
+        margin: 3rem 0 3rem 0;
     }
     
     .title-link {
-        margin: 0;
+        margin: 1rem 0 0 0;
     }
 
 
@@ -521,20 +609,11 @@ nav .fa-solid {
 
     /* !contacts */
 
-    .contacts-left h1 {
-        font-size: 5rem;
-    }
-
-    .contacts-left p {
-        font-size: 2.5rem;
-    }
-
     .contacts-left,
     .contacts-right {
         flex-basis: 100%;
-    }
-
-    #contacts {
+        align-items: center;
         text-align: center;
+        margin: 0;
     }
 }
