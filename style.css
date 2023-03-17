@@ -16,7 +16,8 @@
 }
 
 body {
-    background-color:rgb(25,29,32);
+    background-color: rgb(25, 29, 32);
+
 }
 
 #header {
@@ -140,7 +141,7 @@ nav ul li a:hover {
 }
 
 .about-text {
-    margin: 3rem 0;
+    margin: 8rem 0 2rem 0;
 }
 
 /* ? education, experience i skills nadpisite */
@@ -165,7 +166,7 @@ nav ul li a:hover {
     color: rgb(255, 0, 51);
 }
 
-.title-link.active-link  {
+.title-link.active-link {
     color: crimson;
 }
 
@@ -258,20 +259,20 @@ nav ul li a:hover {
     padding: 0 3rem 0 3rem;
 }
 
-.work:hover .layer{
+.work:hover .layer {
     height: 100%;
 }
 
 .layer h1 {
     font-size: 4rem;
-    margin: 5rem 0 2rem 0 ;
+    margin: 5rem 0 2rem 0;
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
     text-transform: uppercase;
 }
 
 .layer p {
     font-size: 2rem;
-    margin: 0 0 1rem 0 ;
+    margin: 0 0 1rem 0;
     text-shadow: rgb(0, 0, 0) 2px 2px 4px;
 }
 
@@ -281,9 +282,9 @@ nav ul li a:hover {
     font-size: 1rem;
     background: #fff;
     line-height: 1rem;
-    text-align: center; 
+    text-align: center;
     top: 0;
-    left: 25; 
+    left: 25;
 }
 
 .layer a i {
@@ -297,6 +298,12 @@ nav ul li a:hover {
 
 /* !contacts */
 
+
+
+
+#contacts {
+    height: 75vh;
+}
 
 
 .contacts-left {
@@ -359,7 +366,7 @@ nav ul li a:hover {
 
 .submit-button.submit-button2 {
     display: flex;
-    
+
 }
 
 /* ? submit form */
@@ -386,7 +393,8 @@ form textarea {
     outline: none;
     padding: 1rem;
     margin: 1rem 0;
-    background: rgb(38, 47, 54);;
+    background: rgb(38, 47, 54);
+    ;
     color: white;
     font-size: 1rem;
     border-radius: 6px;
@@ -420,6 +428,43 @@ form .submit-button {
 
 
 
+
+/* !footer */
+
+
+
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 4rem 0 0 0;
+    padding-top: 1.25rem;
+    background-color: rgb(29, 36, 41);
+    border-top: 1px solid rgb(29, 32, 41);
+    ;
+    text-shadow: 3px 3px 5px rgb(24, 24, 24);
+}
+
+.footer-content h3 {
+    font-family: "Popins", sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.copyright {
+    font-family: 'Golos Text', sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    margin: 1rem auto;
+}
+
+
+
+
 /* ! small screen */
 
 
@@ -431,12 +476,12 @@ nav .fa-solid {
 
 @media only screen and (max-width: 850px) {
     /* !header */
-    
+
     nav .fa-regular,
     nav .fa-solid {
-    display: block;
-    font-size: 1.5rem;
-}
+        display: block;
+        font-size: 1.5rem;
+    }
 
     .container {
         text-align: center;
@@ -456,7 +501,7 @@ nav .fa-solid {
     }
 
     nav ul {
-        background-color:rgb(44, 56, 65);
+        background-color: rgb(44, 56, 65);
         position: fixed;
         top: 0;
         right: -13rem;
@@ -490,9 +535,15 @@ nav .fa-solid {
 
     .fa-bars {
         cursor: pointer;
-    } 
+    }
+
+
+
 
     /* !contacts */
+
+
+
 
     .contacts-left h1 {
         font-size: 5rem;
@@ -506,16 +557,15 @@ nav .fa-solid {
     .contacts-right {
         flex-basis: 100%;
     }
-
 }
 
 @media only screen and (max-width: 600px) {
 
     nav .fa-regular,
     nav .fa-solid {
-    display: block;
-    font-size: 1.5rem;
-}
+        display: block;
+        font-size: 1.5rem;
+    }
 
     .container {
         text-align: center;
@@ -535,7 +585,7 @@ nav .fa-solid {
     }
 
     nav ul {
-        background-color:rgb(44, 56, 65);
+        background-color: rgb(44, 56, 65);
         position: fixed;
         top: 0;
         right: -13rem;
@@ -569,10 +619,14 @@ nav .fa-solid {
 
     .fa-bars {
         cursor: pointer;
-    } 
+    }
+
+
 
 
     /* !about */
+
+
 
 
     .sub-title {
@@ -596,21 +650,35 @@ nav .fa-solid {
         display: block;
         margin: 3rem 0 3rem 0;
     }
-    
+
     .title-link {
         margin: 1rem 0 0 0;
     }
 
 
+
+
     /* !projects */
+
+
 
 
     .layer p {
         font-size: 1.5rem;
     }
 
+
+
+
     /* !contacts */
 
+
+
+
+    #contacts {
+        height: auto;
+    }
+    
     .contacts-left,
     .contacts-right {
         flex-basis: 100%;
