@@ -153,7 +153,7 @@ nav ul li a:hover {
 
 .title-link {
     cursor: pointer;
-    margin: .3rem 1rem;
+    margin: .3rem 5rem;
     text-transform: uppercase;
     transition: 500ms ease;
     font-weight: 800;
