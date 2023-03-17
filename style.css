@@ -130,7 +130,7 @@ nav ul li a:hover {
 }
 
 .about-text {
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 4rem 0;
 }
 
 .about-text h2 {
@@ -386,7 +386,6 @@ nav ul li a:hover {
 
 .submit-button.submit-button2 {
     display: flex;
-
 }
 
 /* ? submit form */
