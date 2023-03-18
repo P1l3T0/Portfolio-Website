@@ -35,7 +35,7 @@ lazyLaoding();
     const paint = document.getElementById('paint');
 
     function changeImageSrc() {
-        if (window.innerWidth < 1000) {
+        if (window.innerWidth < 1500) {
             chickenWebsite.src = '../pictures/chicken-website-mobile.webp';
             paint.src = '../pictures/paint-mobile.webp';
         } else {

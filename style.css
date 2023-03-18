@@ -33,7 +33,6 @@
 
 body {
     background-color: rgb(25, 29, 32);
-
 }
 
 #header {
@@ -47,22 +46,16 @@ body {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    background-color: transparent;
-}
-
-nav h1 {
-    font-size: 3rem;
-    padding: 1rem;
-    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 0 1rem;
+    margin: 2rem 2rem 0 0;
     transition: 500ms ease;
+    text-align: center;
 }
 
 nav ul li a {
@@ -70,7 +63,7 @@ nav ul li a {
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
     padding: 0 5px 0 5px;
     transition: 1s ease;
@@ -452,6 +445,7 @@ form .submit-button {
 
 
 
+
 .footer-content {
     display: flex;
     align-items: center;
@@ -483,8 +477,13 @@ nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width: 850px) {
+
+@media only screen and (max-width: 950px) {
     /* !header */
+
+    nav {
+        justify-content:right;
+    }
 
     nav .fa-regular,
     nav .fa-solid {
@@ -492,107 +491,16 @@ nav .fa-solid {
         font-size: 1.5rem;
     }
 
-    .container {
-        text-align: center;
-    }
+
 
     #header {
         background-image: url("../pictures/phone-background.webp");
     }
 
-    .header-text {
-        margin-top: 100%;
-        font-size: 1rem;
-    }
-
     .header-text h1 {
-        font-size: 2rem;
-    }
-
-    nav ul {
-        background-color: rgb(44, 56, 65);
-        position: fixed;
-        top: 0;
-        right: -13rem;
-        width: 13rem;
-        height: 100vh;
-        padding-top: 3rem;
-        z-index: 1;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 1.5rem;
-    }
-
-    nav ul li a {
-        font-size: 1.5rem;
-    }
-
-    nav ul li a:hover {
-        color: white;
-        background: transparent;
-        text-shadow: rgb(0, 0, 0) 3px 3px 5px;
-    }
-
-    nav ul .fa-regular {
-        position: absolute;
-        top: 1.5rem;
-        left: 1.5rem;
-        cursor: pointer;
-    }
-
-    .fa-bars {
-        cursor: pointer;
-    }
-
-
-
-
-    /* !contacts */
-
-
-
-
-    .contacts-left h1 {
         font-size: 5rem;
     }
 
-    .contacts-left p {
-        font-size: 2.5rem;
-    }
-
-    .contacts-left,
-    .contacts-right {
-        flex-basis: 100%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-
-    nav .fa-regular,
-    nav .fa-solid {
-        display: block;
-        font-size: 1.5rem;
-    }
-
-    .container {
-        text-align: center;
-    }
-
-    #header {
-        background-image: url("../pictures/phone-background.webp");
-    }
-
-    .header-text {
-        margin-top: 100%;
-        font-size: 1rem;
-    }
-
-    .header-text h1 {
-        font-size: 2rem;
-    }
-
     nav ul {
         background-color: rgb(44, 56, 65);
         position: fixed;
@@ -629,14 +537,15 @@ nav .fa-solid {
     .fa-bars {
         cursor: pointer;
     }
+}
 
 
-
-
+@media only screen and (max-width: 1500px) {
     /* !about */
 
-
-
+    .container {
+        text-align: center;
+    }
 
 
     .sub-title {
@@ -680,8 +589,6 @@ nav .fa-solid {
 
 
 
-
-
     /* !projects */
 
 
@@ -695,6 +602,7 @@ nav .fa-solid {
 
 
     /* !contacts */
+
 
 
 
@@ -714,5 +622,18 @@ nav .fa-solid {
     .submit-button,
     .button {
         margin: 3rem auto;
+    }
+
+    .contacts-left h1 {
+        font-size: 5rem;
+    }
+
+    .contacts-left p {
+        font-size: 2.5rem;
+    }
+
+    .contacts-left,
+    .contacts-right {
+        flex-basis: 100%;
     }
 }
