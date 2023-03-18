@@ -370,7 +370,7 @@ nav ul li a:hover {
     border-radius: 15px;
     text-transform: uppercase;
     text-decoration: none;
-    transition: 500ms ease;
+    transition: 1s ease;
 }
 
 .button:hover {
@@ -428,7 +428,7 @@ form .submit-button {
     display: block;
     width: fit-content;
     text-transform: uppercase;
-    transition: 500ms ease;
+    transition: 1s ease;
     background-color: transparent;
 }
 
