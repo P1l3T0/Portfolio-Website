@@ -75,7 +75,7 @@ nav ul li:hover {
 }
 
 nav ul li a:hover {
-    color: crimson;
+    color:rgb(53, 136, 204);
 }
 
 .header-text {
@@ -89,14 +89,16 @@ nav ul li a:hover {
     font-size: 5rem;
     line-height: 1.1;
     font-weight: 800;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
 }
 
 .header-text p {
     font-size: 1.5rem;
+    text-shadow: rgb(0, 0, 0) 2px 2px 4px;
 }
 
 .header-text span {
-    color: crimson;
+    color: rgb(53, 136, 204);
 }
 
 .fa-solid {
@@ -111,6 +113,15 @@ nav ul li a:hover {
 
 
 
+.sub-title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+}
+
+.sub-title span {
+    color: rgb(53, 136, 204);
+}
 
 .row {
     display: flex;
@@ -132,7 +143,6 @@ nav ul li a:hover {
     font-size: 2rem;
 }
 
-
 .about-col1 {
     flex-basis: 35%;
     text-align: center;
@@ -141,8 +151,9 @@ nav ul li a:hover {
 .about-col1 h2 {
     font-size: 2rem;
     padding: .5rem 0;
-    color: crimson;
+    color: rgb(53, 136, 204);
     text-transform: uppercase;
+    font-weight: 800;
 }
 
 .about-col1 i {
@@ -161,13 +172,6 @@ nav ul li a:hover {
     flex-basis: 60%;
     width: 100%;
 }
-
-.about-col2 h1 span {
-    color: crimson;
-}
-
-
-
 
 /* ? education, experience i skills nadpisite */
 
@@ -188,11 +192,11 @@ nav ul li a:hover {
 }
 
 .title-link:hover {
-    color: rgb(255, 0, 51);
+    color: rgb(37, 157, 255);
 }
 
 .title-link.active-link {
-    color: crimson;
+    color: rgb(53, 136, 204);
 }
 
 /* ? informaciqta kum education, skills, experience */
@@ -213,7 +217,7 @@ nav ul li a:hover {
 
 .title-content ul li h4 {
     text-transform: uppercase;
-    color: crimson;
+    color: rgb(53, 136, 204);
     font-size: 1.75rem;
     font-weight: 600;
 }
@@ -235,19 +239,11 @@ nav ul li a:hover {
 
 
 
-.sub-title {
-    font-size: 5rem;
-    text-transform: uppercase;
-    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
-}
 
-.sub-title span {
-    color: crimson;
-}
 
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
     grid-gap: 3rem;
 }
 
@@ -269,9 +265,9 @@ nav ul li a:hover {
 }
 
 .layer {
-        text-align: center;
+    text-align: center;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.815), crimson);
+    background: linear-gradient(rgba(0, 0, 0, 0.815), rgb(53, 136, 204));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -314,7 +310,7 @@ nav ul li a:hover {
 }
 
 .layer a i {
-    color: crimson;
+    color: rgb(53, 136, 204);
     width: 2rem;
     height: 2rem;
     font-size: 2rem;
@@ -346,7 +342,7 @@ nav ul li a:hover {
 }
 
 .contacts-left p i {
-    color: crimson;
+    color: rgb(53, 136, 204);
     font-size: 2rem;
 }
 
@@ -366,7 +362,7 @@ nav ul li a:hover {
 }
 
 .social-icons a i:hover {
-    color: crimson;
+    color: rgb(53, 136, 204);
     transform: translateY(-5px);
 }
 
@@ -378,7 +374,7 @@ nav ul li a:hover {
     text-align: center;
     margin: 3rem 0 0 0;
     width: fit-content;
-    border: 2px solid crimson;
+    border: 2px solid rgb(53, 136, 204);
     padding: 1rem;
     border-radius: 15px;
     text-transform: uppercase;
@@ -387,7 +383,7 @@ nav ul li a:hover {
 }
 
 .button:hover {
-    background-color: crimson;
+    background-color: rgb(53, 136, 204);
 }
 
 .submit-button.submit-button2 {
@@ -436,7 +432,7 @@ form .submit-button {
     font-weight: 800;
     padding: .5rem;
     border-radius: 15px;
-    border: 2px solid crimson;
+    border: 2px solid rgb(53, 136, 204);
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
     display: block;
     width: fit-content;
@@ -445,9 +441,8 @@ form .submit-button {
     background-color: transparent;
 }
 
-
 .submit-button:hover {
-    background-color: crimson;
+    background-color: rgb(53, 136, 204);
 }
 
 
