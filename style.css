@@ -38,7 +38,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url("../pictures/king.webp");
+    background-image: url("../pictures/cat.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -87,12 +87,13 @@ nav ul li a:hover {
     margin: 1rem 0 1rem 0;
     font-size: 5rem;
     line-height: 1.1;
-    font-weight: 800;
+    font-weight: 900;
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
 }
 
 .header-text p {
     font-size: 1.5rem;
+    font-weight: 600;
     text-shadow: rgb(0, 0, 0) 2px 2px 4px;
 }
 
@@ -155,8 +156,7 @@ nav ul li a:hover {
 }
 
 .about-col1 img {
-    width: 100%;
-    height: auto;
+    width: 90%;
     border-radius: 2rem;
     padding: 1rem;
 }
@@ -242,8 +242,7 @@ nav ul li a:hover {
     display: block;
     border: 2px solid white;
     border-radius: 10px;
-    margin: 3rem 0;
-
+    margin: 2rem 0;
 }
 
 .work img {
@@ -271,7 +270,6 @@ nav ul li a:hover {
     justify-content: center;
     flex-direction: column;
     padding: 0 3rem 0 3rem;
-    
 }
 
 .work:hover .layer {
@@ -458,7 +456,7 @@ form .submit-button {
     font-weight: 700;
 }
 
-/*!-------------SMALL_SCREEN-------------*/
+/*!-------------SMALL-SCREEN-------------*/
 
 nav .fa-regular,
 nav .fa-solid {
@@ -467,6 +465,15 @@ nav .fa-solid {
 
 
 @media only screen and (max-width: 660px) {
+    #blur-overlay {
+        height: 662vh;
+        width: 100%;
+        backdrop-filter: blur(2px);
+        position: absolute;
+        display: none;
+        z-index: 1;
+    }  
+    
     nav {
         justify-content:right;
     }
@@ -490,6 +497,7 @@ nav .fa-solid {
         position: fixed;
         top: 0;
         right: -13rem;
+        overflow: hidden;
         width: 13rem;
         height: 100vh;
         padding-top: 3rem;
@@ -524,6 +532,14 @@ nav .fa-solid {
 
     .flex-layer h1 {
         font-size: 3.5rem;
+    }
+
+    .title-link:hover {
+        transform: scale(1.1);
+    }
+
+    .title-link.active-link {
+        transform: scale(1);
     }
 }
 

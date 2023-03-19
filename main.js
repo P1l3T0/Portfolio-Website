@@ -16,15 +16,26 @@
 
 {
     var sideMenu = document.getElementById("side-menu");
+    var blurEffect = document.getElementById("blur-overlay");
 
     function openMenu() {
         sideMenu.style.right = "0";
         sideMenu.style.transition = "500ms ease";
+
+        blurEffect.style.pointerEvents = 'auto';
+        setTimeout(() => {
+            blurEffect.style.display = 'block';
+        }, 1);
     }
 
     function closeMenu() {
         sideMenu.style.right = "-210px";
         sideMenu.style.transition = "500ms ease";
+
+        blurEffect.style.pointerEvents = 'none';
+        setTimeout(() => {
+            blurEffect.style.display = 'none';
+        }, 1);
     }
 }
 
@@ -34,11 +45,11 @@
 
     function changeImageSrc() {
         if (window.innerWidth < 1500) {
-            chickenWebsite.src = '../pictures/chicken-website-mobile.webp';
-            paint.src = '../pictures/paint-mobile.webp';
+            chickenWebsite.src = '/pictures/chicken-website-mobile.webp';
+            paint.src = '/pictures/paint-mobile.webp';
         } else {
-            chickenWebsite.src = '../pictures/chicken-website.webp';
-            paint.src = '../pictures/paint.webp';
+            chickenWebsite.src = '/pictures/chicken-website.webp';
+            paint.src = '/pictures/paint.webp';
 
         }
     }

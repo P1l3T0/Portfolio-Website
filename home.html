@@ -14,6 +14,7 @@
 <body>
     <!--!-------------PROJECTS--------------->
     <div id="header">
+        <div id="blur-overlay"></div>
         <div class="header-container">
             <nav>
                 <ul id="side-menu">
@@ -25,12 +26,15 @@
                 <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
 
+
             <div class="header-text">
                 <h1>Hello,<br />I'm <span>P1l3T0</span></h1>
                 <p>Front end developer (on occasions back end with C#)</p>
             </div>
+
         </div>
     </div>
+
 
     <!--!-------------ABOUT--------------->
 
@@ -57,12 +61,12 @@
                     </div>
 
                     <div class="title-cards">
-                        <p class="title-link active-link" onclick="openTab('skills')">skills</p>
+                        <p class="title-link" onclick="openTab('skills')">skills</p>
                         <p class="title-link" onclick="openTab('education')">education</p>
                         <p class="title-link" onclick="openTab('experience')">experience</p>
                     </div>
 
-                    <div class="title-content active-content" id="skills">
+                    <div class="title-content" id="skills">
                         <ul>
                             <li>
                                 <h4>front-end enjoyer</h4>
@@ -76,8 +80,7 @@
                                 <h4>back-end rookie</h4>
                                 <p>
                                     Since high school, I've been using languages from the C family,
-                                    and I can say that I'm comfortable using them, especially C# and
-                                    the.NET framework.
+                                    and I can say that I'm comfortable with them, especially C# and .NET framework.
                                 </p>
                             </li>
                         </ul>
@@ -90,8 +93,8 @@
                                 <p>Computer Science, Technical University of Sofia</p>
                             </li>
                             <li>
-                                <h4>2016 - 2021</span>
-                                    <p>PMG Sliven</p>
+                                <h4>2016 - 2021</h4>
+                                <p>PMG Sliven</p>
                             </li>
                         </ul>
                     </div>
@@ -99,12 +102,12 @@
                     <div class="title-content" id="experience">
                         <ul>
                             <li>
-                                <h4>software developer</span>
-                                    <p>Currently with 0 years of professional experience 💀</p>
+                                <h4>software developer</h4>
+                                <p>Currently with 0 years of professional experience 💀</p>
                             </li>
                             <li>
-                                <h4>frontendajiq</span>
-                                    <p>Pravq saitove za maika mi i TU Sliven 💀💀💀</p>
+                                <h4>frontendajiq</h4>
+                                <p>Pravq saitove za maika mi i TU Sliven 💀💀💀</p>
                             </li>
                         </ul>
                     </div>
@@ -120,7 +123,7 @@
         <div class="projects-container">
             <div class="work-list">
                 <div class="work">
-                    <img src="../pictures/Chicken-Website.webp" id="paint" />
+                    <img src="../pictures/Chicken-Website.webp" id="chicken-website" />
                     <div class="layer">
                         <h1>Chicken Website</h1>
                         <p>
