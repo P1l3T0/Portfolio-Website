@@ -83,7 +83,6 @@ nav ul li a:hover {
     padding: 0 4rem;
 }
 
-
 .header-text h1 {
     margin: 1rem 0 1rem 0;
     font-size: 5rem;
@@ -105,13 +104,7 @@ nav ul li a:hover {
     margin: 2rem;
 }
 
-
-
-
-/* !about section */
-
-
-
+/*!-------------ABOUT-------------*/
 
 .sub-title {
     font-size: 5rem;
@@ -185,7 +178,7 @@ nav ul li a:hover {
     cursor: pointer;
     margin: .1rem 6rem;
     text-transform: uppercase;
-    transition: 500ms ease;
+    transition: 1s ease;
     font-weight: 800;
     font-size: 2rem;
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
@@ -193,10 +186,12 @@ nav ul li a:hover {
 
 .title-link:hover {
     color: rgb(37, 157, 255);
+    transform: scale(1.20);
 }
 
 .title-link.active-link {
     color: rgb(53, 136, 204);
+    transform: scale(1);
 }
 
 /* ? informaciqta kum education, skills, experience */
@@ -231,33 +226,31 @@ nav ul li a:hover {
     display: block;
 }
 
+/*!-------------PROJECTS-------------*/
 
+#projects h1 {
+    text-align: center;
+}
 
-
-/* !projects section */
-
-
-
-
-
-
-.work-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
-    grid-gap: 3rem;
+.projects-container {
+    display: flex;
+    justify-content: center;
 }
 
 .work {
-    border-radius: 10px;
     position: relative;
-    overflow: hidden;
+    display: block;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 3rem 0;
+
 }
 
 .work img {
     width: 100%;
-    height: 40rem;
+    height: 50rem;
     border-radius: 10px;
-    display: block;
+    transition: 750ms ease;
 }
 
 .work .layer {
@@ -266,10 +259,9 @@ nav ul li a:hover {
 
 .layer {
     text-align: center;
-    height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.815), rgb(53, 136, 204));
     border-radius: 10px;
-    position: absolute;
+    position:absolute;
     left: 0;
     bottom: 0;
     height: 0;
@@ -279,10 +271,15 @@ nav ul li a:hover {
     justify-content: center;
     flex-direction: column;
     padding: 0 3rem 0 3rem;
+    
 }
 
 .work:hover .layer {
     height: 100%;
+}
+
+.work:hover img {
+    filter: blur(10px);
 }
 
 .layer h1 {
@@ -316,12 +313,7 @@ nav ul li a:hover {
     font-size: 2rem;
 }
 
-
-
-/* !contacts */
-
-
-
+/*!-------------CONTACTS-------------*/
 
 #contacts {
     height: 85vh;
@@ -445,14 +437,7 @@ form .submit-button {
     background-color: rgb(53, 136, 204);
 }
 
-
-
-
-/* !footer */
-
-
-
-
+/*!-------------FOOTER-------------*/
 
 .footer-content {
     display: flex;
@@ -473,12 +458,7 @@ form .submit-button {
     font-weight: 700;
 }
 
-
-
-
-/* ! small screen */
-
-
+/*!-------------SMALL_SCREEN-------------*/
 
 nav .fa-regular,
 nav .fa-solid {
@@ -487,8 +467,6 @@ nav .fa-solid {
 
 
 @media only screen and (max-width: 660px) {
-    /* !header */
-
     nav {
         justify-content:right;
     }
@@ -498,8 +476,6 @@ nav .fa-solid {
         display: block;
         font-size: 1.5rem;
     }
-
-
 
     #header {
         background-image: url("../pictures/phone-background.webp");
@@ -545,6 +521,10 @@ nav .fa-solid {
     .fa-bars {
         cursor: pointer;
     }
+
+    .flex-layer h1 {
+        font-size: 3.5rem;
+    }
 }
 
 
@@ -554,7 +534,6 @@ nav .fa-solid {
     .container {
         text-align: center;
     }
-
 
     .sub-title {
         font-size: 4rem;
@@ -598,26 +577,7 @@ nav .fa-solid {
         margin: .5rem 0 0 0;
     }
 
-
-
-
-    /* !projects */
-
-
-
-
-    .layer p {
-        font-size: 1.5rem;
-    }
-
-
-
-
-    /* !contacts */
-
-
-
-
+/*!-------------CONTACTS-------------*/
 
     #contacts {
         height: auto;
