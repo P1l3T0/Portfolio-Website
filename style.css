@@ -468,7 +468,7 @@ nav .fa-solid {
     #blur-overlay {
         height: 662vh;
         width: 100%;
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(3px);
         position: absolute;
         display: none;
         z-index: 1;
