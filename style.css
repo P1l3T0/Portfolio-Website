@@ -327,7 +327,6 @@ nav ul li a:hover {
     height: 85vh;
 }
 
-
 .contacts-left {
     flex-basis: 45%;
     margin: 2rem;
@@ -339,6 +338,7 @@ nav ul li a:hover {
 
 .contacts-left p {
     font-size: 3rem;
+    font-weight: 600;
 }
 
 .contacts-left p i {
