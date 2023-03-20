@@ -6,7 +6,7 @@
         for (titleLink of titleLinks)
             titleLink.classList.remove("active-link");
 
-        for (titleContent of titleContents)
+        for (titleContent of titleContents) 
             titleContent.classList.remove("active-content");
 
         event.currentTarget.classList.add("active-link");
