@@ -35,6 +35,18 @@ body {
     background-color: rgb(25, 29, 32);
 }
 
+.sub-title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+}
+
+.sub-title span {
+    color: rgb(53, 136, 204);
+}
+
+/*!-------------HEADER-------------*/
+
 #header {
     width: 100%;
     height: 100vh;
@@ -101,40 +113,16 @@ nav ul li a:hover {
     color: rgb(53, 136, 204);
 }
 
-.fa-solid {
+.fa-bars {
     margin: 2rem;
 }
 
 /*!-------------ABOUT-------------*/
 
-.sub-title {
-    font-size: 5rem;
-    text-transform: uppercase;
-    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
-}
-
-.sub-title span {
-    color: rgb(53, 136, 204);
-}
-
 .row {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.row p {
-    font-size: 2rem;
-    width: 100%;
-}
-
-.about-text h2 {
-    font-size: 3.5rem;
-    margin: 0 0 2rem 0;
-}
-
-.about-text p {
-    font-size: 2rem;
+    justify-content: space-between;
 }
 
 .about-col1 {
@@ -145,48 +133,70 @@ nav ul li a:hover {
 .about-col1 h2 {
     font-size: 2rem;
     padding: .5rem 0;
+    font-weight: 800;
     color: rgb(53, 136, 204);
     text-transform: uppercase;
-    font-weight: 800;
 }
 
 .about-col1 i {
     font-size: 3rem;
     margin: 0 1rem;
+    transition: 1s ease-in-out;
+}
+
+.about-col1 .fa-html5:hover {
+    color: rgba(246, 160, 0, 0.683);
+}
+
+.about-col1 .fa-css3-alt:hover {
+    color: rgba(0, 135, 246, 0.683);
+}
+
+.about-col1 .fa-js:hover {
+    color: rgb(246, 255, 0);
 }
 
 .about-col1 img {
     width: 90%;
-    border-radius: 2rem;
     padding: 1rem;
+    border-radius: 2rem;
 }
 
 .about-col2 {
-    flex-basis: 60%;
     width: 100%;
+    flex-basis: 60%;
 }
 
-/* ? education, experience i skills nadpisite */
+.about-text h2 {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+}
+
+.about-text p {
+    font-size: 1.5rem;
+}
+
+/*?-------------EDUCATION-EXPERIENCE-SKILLS-LINKS-------------*/
 
 .title-cards {
     display: flex;
-    text-align: center;
-    margin: 3rem 0;
+    margin: 1rem 0;
+    justify-content: center;
 }
 
 .title-link {
     cursor: pointer;
-    margin: .1rem 6rem;
-    text-transform: uppercase;
-    transition: 1s ease;
-    font-weight: 800;
     font-size: 2rem;
+    font-weight: 800;
+    margin: 0 2rem;
+    transition: 1s ease;
+    text-transform: uppercase;
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
 }
 
 .title-link:hover {
-    color: rgb(37, 157, 255);
     transform: scale(1.1);
+    color: rgb(37, 157, 255);
 }
 
 .title-link.active-link {
@@ -194,37 +204,36 @@ nav ul li a:hover {
     transform: scale(1);
 }
 
-/* ? informaciqta kum education, skills, experience */
+/*?-------------INFORMATION-------------*/
 
 .title-content {
-    display: none;
-    width: auto;
     height: 50vh;
+    width: auto;
+    display: none;
 }
 
 .title-content ul li {
     list-style: none;
-    margin: 2rem 0;
-    font-size: 1.25rem;
+    margin: 1.5rem 0;
     line-height: 2rem;
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
 }
 
 .title-content ul li h4 {
-    text-transform: uppercase;
-    color: rgb(53, 136, 204);
-    font-size: 1.75rem;
     font-weight: 600;
+    font-size:1.75rem;
+    color: rgb(53, 136, 204);
+    text-transform: uppercase;
 }
 
 .title-content ul li p {
-    font-size: 1.75rem;
-    margin: 1rem 0;
+    font-size: 1.5rem;
+    margin: .5rem 0;
 }
 
 .title-content.active-content {
     display: block;
-    animation: fade-in 2s ease;
+    animation: fade-in 2s ease-in-out;
 }
 
 @keyframes fade-in {
@@ -373,9 +382,9 @@ nav ul li a:hover {
     display: block;
     text-align: center;
     margin: 3rem 0 0 0;
+    padding: 1rem;
     width: fit-content;
     border: 2px solid rgb(53, 136, 204);
-    padding: 1rem;
     border-radius: 15px;
     text-transform: uppercase;
     text-decoration: none;
@@ -390,7 +399,8 @@ nav ul li a:hover {
     display: flex;
 }
 
-/* ? submit form */
+/*?-------------SUBMIT-FORM-------------*/
+
 
 .contacts-right form {
     width: 100%;
@@ -475,6 +485,7 @@ nav .fa-solid {
 
 
 @media only screen and (max-width: 660px) {
+    /*!-------------HEADER-------------*/
     #blur-overlay {
         height: 662vh;
         width: 100%;
@@ -555,7 +566,7 @@ nav .fa-solid {
 
 
 @media only screen and (max-width: 1500px) {
-    /* !about */
+/*!-------------ABOUT-------------*/
 
     .container {
         text-align: center;
@@ -575,28 +586,29 @@ nav .fa-solid {
     }
 
     .about-text {
-        margin: 2rem 0 2rem 0;
+        margin: .5rem 0 .5rem 0;
     }
 
     .about-text h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .about-text p {
-        font-size: 1.5rem;
-    }
-
-    .about-text h2 {
-        font-size: 3rem;
+        font-size: 1.25rem;
     }
 
     .title-content ul li p {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    .title-content ul li h4 {
         font-size: 1.5rem;
     }
 
     .title-cards {
         display: block;
-        margin: 3rem 0 3rem 0;
+        margin: 1.5rem 0 1.5rem 0;
     }
 
     .title-link {
