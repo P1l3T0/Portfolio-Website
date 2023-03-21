@@ -18,9 +18,9 @@
         <div class="header-container">
             <nav>
                 <ul id="side-menu">
-                    <li class="animated-list"><a href="#about" class="animated-link">about</a></li>
-                    <li class="animated-list"><a href="#projects" class="animated-link">projects</a></li>
-                    <li class="animated-list"><a href="#contacts" class="animated-link">contacts</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contacts">contacts</a></li>
                     <i class="fa-regular fa-rectangle-xmark" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openMenu()"></i>
@@ -41,7 +41,7 @@
             <h1 class="sub-title">About <span>me</span></h1>
             <div class="row">
                 <div class="about-col1">
-                    <img src="../pictures/hentie.webp" />
+                    <img src="../pictures/hentie.webp" alt="picture of a hen with tie" />
                     <h2>Technologies</h2>
                     <i class="fa-brands fa-html5"></i>
                     <i class="fa-brands fa-css3-alt"></i>
@@ -54,20 +54,34 @@
                             Computer Science at Technical University of Sofia. From
                             an young age I've had an obsession with computers and how
                             they function and that's how I got this passion for coding
-                            and wanting to create software for various purposes. <br>
-                            Ever since 10th grade I've been learning to code and still
-                            got a lot of things to look out for and lots ot technologies
-                            to research but eventually I'll get there!!
+                            and wanting to create software for various purposes. <br> It started
+                            with making simple games with the Unity game engine and years later
+                            I'm here fully focused on front end, currently working on various projects
+                            made for either practise or real world use and upgrading my skills as a developer
+                            in the same time.
                         </p>
                     </div>
 
                     <div class="title-cards">
-                        <h3 class="title-link active-link" onclick="openTab('skills')">skills</h3>
-                        <h3 class="title-link" onclick="openTab('education')">education</h3>
+                        <h3 class="title-link active-link" onclick="openTab('education')">education</h3>
+                        <h3 class="title-link" onclick="openTab('skills')">skills</h3>
                         <h3 class="title-link" onclick="openTab('experience')">experience</h3>
                     </div>
 
-                    <div class="title-content active-content" id="skills">
+                    <div class="title-content  active-content" id="education">
+                        <ul>
+                            <li>
+                                <h4>2021 - current</h4>
+                                <p>Computer Science, Technical University of Sofia</p>
+                            </li>
+                            <li>
+                                <h4>2016 - 2021</h4>
+                                <p>PMG Sliven</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="title-content" id="skills">
                         <ul>
                             <li>
                                 <h4>front-end enjoyer</h4>
@@ -83,19 +97,6 @@
                                     Since high school, I've been using languages from the C family,
                                     and I can say that I'm comfortable with them, especially C# and .NET framework.
                                 </p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="title-content" id="education">
-                        <ul>
-                            <li>
-                                <h4>2021 - current</h4>
-                                <p>Computer Science, Technical University of Sofia</p>
-                            </li>
-                            <li>
-                                <h4>2016 - 2021</h4>
-                                <p>PMG Sliven</p>
                             </li>
                         </ul>
                     </div>
@@ -120,19 +121,20 @@
         <div class="projects-container">
             <div class="work-list">
                 <div class="work">
-                    <img src="../pictures/Chicken-Website.webp" id="chicken-website" />
+                    <img src="../pictures/Chicken-Website.webp" id="chicken-website"
+                        alt="picture of my chicken website" />
                     <div class="layer">
                         <h1>Chicken Website</h1>
                         <p>
                             Website, dedicated to chicken, created using HTML, CSS, JavaScript
                             and PHP for the server side
                         </p>
-                        <a href="https://github.com/P1l3T0/2D-Shape-Editor" target="_blank">
+                        <a href="https://github.com/P1l3T0/Chicken-Website" target="_blank">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="../pictures/paint.webp" id="paint" />
+                    <img src="../pictures/paint.webp" id="paint" alt="picture of my shape editor application" />
                     <div class="layer">
                         <h1>Shape Editor</h1>
                         <p>
@@ -170,7 +172,7 @@
                             <i class="fa-brands fa-youtube"></i></a>
                     </div>
                     <a href="" class="button">download cv</a>
-                    <!--! implementirai go tyi sled kato si napravish CV -->
+                    <!--! metni si CV -->
                 </div>
                 <div class="contacts-right">
                     <form action="https://formsubmit.co/vgan3v@gmail.com" method="POST">

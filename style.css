@@ -50,9 +50,8 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url("../pictures/cat.webp");
+    background: url("../pictures/cat.webp") no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 nav {
@@ -66,7 +65,7 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 1rem;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
     text-align: center;
 }
 
@@ -78,7 +77,7 @@ nav ul li a {
     font-size: 2rem;
     font-weight: 800;
     padding: 0 5px 0 5px;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
     cursor: pointer;
 }
 
@@ -180,7 +179,7 @@ nav ul li a:hover {
 
 .title-cards {
     display: flex;
-    margin: 1rem 0;
+    margin: 2rem 0;
     justify-content: center;
 }
 
@@ -189,26 +188,24 @@ nav ul li a:hover {
     font-size: 2rem;
     font-weight: 800;
     margin: 0 2rem;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
     text-transform: uppercase;
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
 }
 
 .title-link:hover {
-    transform: scale(1.1);
+    transform: translateY(-5px);
     color: rgb(37, 157, 255);
 }
 
 .title-link.active-link {
     color: rgb(53, 136, 204);
-    transform: scale(1);
 }
 
 /*?-------------INFORMATION-------------*/
 
 .title-content {
     height: 50vh;
-    width: auto;
     display: none;
 }
 
@@ -233,14 +230,16 @@ nav ul li a:hover {
 
 .title-content.active-content {
     display: block;
-    animation: fade-in 2s ease-in-out;
+    animation: fade-in 1s ease-in-out;
 }
 
 @keyframes fade-in {
     0% {
+        transform: translateY(40px);
         opacity: 0;
     }
     100% {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
@@ -268,16 +267,16 @@ nav ul li a:hover {
     width: 100%;
     height: 50rem;
     border-radius: 10px;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 }
 
 .work .layer {
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 }
 
 .layer {
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.815), rgb(53, 136, 204));
+    background: linear-gradient(transparent, rgb(53, 136, 204));
     border-radius: 10px;
     position:absolute;
     left: 0;
@@ -315,19 +314,16 @@ nav ul li a:hover {
 .layer a {
     border-radius: 50%;
     margin: 1rem;
-    font-size: 1rem;
     background: #fff;
     line-height: 1rem;
-    text-align: center;
-    top: 0;
-    left: 25;
+    width: 4rem;
+    height: 4rem;
 }
 
 .layer a i {
     color: rgb(53, 136, 204);
-    width: 2rem;
-    height: 2rem;
     font-size: 2rem;
+    margin: 1rem ;
 }
 
 /*!-------------CONTACTS-------------*/
@@ -367,7 +363,7 @@ nav ul li a:hover {
 }
 
 .social-icons a i {
-    transition: 500ms ease;
+    transition: 750ms ease-in-out;
 }
 
 .social-icons a i:hover {
@@ -388,7 +384,7 @@ nav ul li a:hover {
     border-radius: 15px;
     text-transform: uppercase;
     text-decoration: none;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 }
 
 .button:hover {
@@ -400,7 +396,6 @@ nav ul li a:hover {
 }
 
 /*?-------------SUBMIT-FORM-------------*/
-
 
 .contacts-right form {
     width: 100%;
@@ -447,7 +442,7 @@ form .submit-button {
     display: block;
     width: fit-content;
     text-transform: uppercase;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
     background-color: transparent;
 }
 
