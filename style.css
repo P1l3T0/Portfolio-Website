@@ -1,6 +1,5 @@
 @import url("https://fonts.google.com/share?selection.family=Poppins:wght@100");
 
-
 * {
     margin: 0;
     padding: 0;
@@ -71,22 +70,32 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+    text-shadow: black 3px 3px 5px;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 800;
-    padding: 0 5px 0 5px;
+    padding: 0 .5rem;
     transition: 1s ease-in-out;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 
-nav ul li:hover {
-    transform: translateY(-5px);
+nav ul li a::before {
+    background: rgb(53, 136, 204);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
 }
 
-nav ul li a:hover {
-    color:rgb(53, 136, 204);
+nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .header-text {
@@ -218,7 +227,7 @@ nav ul li a:hover {
 
 .title-content ul li h4 {
     font-weight: 600;
-    font-size:1.75rem;
+    font-size: 1.75rem;
     color: rgb(53, 136, 204);
     text-transform: uppercase;
 }
@@ -238,6 +247,7 @@ nav ul li a:hover {
         transform: translateY(40px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
@@ -278,7 +288,7 @@ nav ul li a:hover {
     text-align: center;
     background: linear-gradient(transparent, rgb(53, 136, 204));
     border-radius: 10px;
-    position:absolute;
+    position: absolute;
     left: 0;
     bottom: 0;
     height: 0;
@@ -323,7 +333,7 @@ nav ul li a:hover {
 .layer a i {
     color: rgb(53, 136, 204);
     font-size: 2rem;
-    margin: 1rem ;
+    margin: 1rem;
 }
 
 /*!-------------CONTACTS-------------*/
@@ -480,6 +490,7 @@ nav .fa-solid {
 
 
 @media only screen and (max-width: 660px) {
+
     /*!-------------HEADER-------------*/
     #blur-overlay {
         height: 662vh;
@@ -488,10 +499,10 @@ nav .fa-solid {
         position: absolute;
         display: none;
         z-index: 1;
-    }  
-    
+    }
+
     nav {
-        justify-content:right;
+        justify-content: right;
     }
 
     nav .fa-regular,
@@ -522,17 +533,11 @@ nav .fa-solid {
 
     nav ul li {
         display: block;
-        margin: 1.5rem;
+        margin: 1rem;
     }
 
     nav ul li a {
         font-size: 1.5rem;
-    }
-
-    nav ul li a:hover {
-        color: white;
-        background: transparent;
-        text-shadow: rgb(0, 0, 0) 3px 3px 5px;
     }
 
     nav ul .fa-regular {
@@ -561,7 +566,7 @@ nav .fa-solid {
 
 
 @media only screen and (max-width: 1500px) {
-/*!-------------ABOUT-------------*/
+    /*!-------------ABOUT-------------*/
 
     .container {
         text-align: center;
@@ -587,7 +592,7 @@ nav .fa-solid {
     .about-text h2 {
         font-size: 2.5rem;
     }
-    
+
     .about-text p {
         font-size: 1.25rem;
     }
@@ -610,7 +615,7 @@ nav .fa-solid {
         margin: .5rem 0 0 0;
     }
 
-/*!-------------CONTACTS-------------*/
+    /*!-------------CONTACTS-------------*/
 
     #contacts {
         height: auto;
