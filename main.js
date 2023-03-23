@@ -1,5 +1,6 @@
 hamburgerMenu();
 aboutContent();
+resize();
 
 
 function hamburgerMenu() {
@@ -61,20 +62,17 @@ function aboutContent() {
     }
 }
 
-{
+function resize() {
     const chickenWebsite = document.getElementById('chicken-website');
     const paint = document.getElementById('paint');
 
-    function changeImageSrc() {
-        if (window.innerWidth < 1500) {
-            chickenWebsite.src = '/pictures/chicken-website-mobile.webp';
-            paint.src = '/pictures/paint-mobile.webp';
-        } else {
-            chickenWebsite.src = '/pictures/chicken-website.webp';
-            paint.src = '/pictures/paint.webp';
-
-        }
+    if (window.innerWidth < 1500) {
+        chickenWebsite.src = '/pictures/chicken-website-mobile.webp';
+        paint.src = '/pictures/paint-mobile.webp';
+    } else {
+        chickenWebsite.src = '/pictures/chicken-website.webp';
+        paint.src = '/pictures/paint.webp';
     }
 
-    window.addEventListener('resize', changeImageSrc);
+    window.addEventListener('resize', resize);
 }
