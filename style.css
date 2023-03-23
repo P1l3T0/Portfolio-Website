@@ -181,7 +181,7 @@ nav ul li a:hover::before {
 }
 
 .about-text p {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 /*?-------------EDUCATION-EXPERIENCE-SKILLS-LINKS-------------*/
@@ -268,7 +268,7 @@ nav ul li a:hover::before {
 .work {
     position: relative;
     display: block;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 10px;
     margin: 2rem 0;
 }
