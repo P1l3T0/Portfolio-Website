@@ -21,9 +21,9 @@
                     <li><a href="#about">about</a></li>
                     <li><a href="#projects">projects</a></li>
                     <li><a href="#contacts">contacts</a></li>
-                    <i class="fa-regular fa-rectangle-xmark" onclick="closeMenu()"></i>
+                    <i class="fa-regular fa-rectangle-xmark" id="close-menu"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <i class="fa-solid fa-bars" id="open-menu"></i>
             </nav>
 
             <div class="header-text">
@@ -60,13 +60,13 @@
                         </p>
                     </div>
 
-                    <div class="title-cards">
-                        <h3 class="title-link active-link" onclick="openTab('education')">education</h3>
-                        <h3 class="title-link" onclick="openTab('skills')">skills</h3>
-                        <h3 class="title-link" onclick="openTab('experience')">experience</h3>
+                    <div class="title-cards" id="title-link">
+                        <h3 class="title-link title-link1 active-link" id="title-link1">education</h3>
+                        <h3 class="title-link title-link2" id="title-link2">skills</h3>
+                        <h3 class="title-link title-link3" id="title-link3">experience</h3>
                     </div>
 
-                    <div class="title-content  active-content" id="education">
+                    <div class="title-content active-content" id="education">
                         <ul>
                             <li>
                                 <h4>2021 - current</h4>

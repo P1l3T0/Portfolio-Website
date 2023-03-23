@@ -1,24 +1,12 @@
-{
-    var titleLinks = document.getElementsByClassName("title-link");
-    var titleContents = document.getElementsByClassName("title-content");
+hamburgerMenu();
+aboutContent();
 
-    function openTab(tabname) {
-        for (titleLink of titleLinks)
-            titleLink.classList.remove("active-link");
 
-        for (titleContent of titleContents) 
-            titleContent.classList.remove("active-content");
-
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-content");
-    }
-}
-
-{
+function hamburgerMenu() {
     var sideMenu = document.getElementById("side-menu");
     var blurEffect = document.getElementById("blur-overlay");
 
-    function openMenu() {
+    document.getElementById("open-menu").addEventListener("click", function () {
         sideMenu.style.right = "0";
         sideMenu.style.transition = "500ms ease";
 
@@ -26,9 +14,9 @@
         setTimeout(() => {
             blurEffect.style.display = 'block';
         }, 1);
-    }
+    });
 
-    function closeMenu() {
+    document.getElementById("close-menu").addEventListener("click", function () {
         sideMenu.style.right = "-210px";
         sideMenu.style.transition = "500ms ease";
 
@@ -36,6 +24,40 @@
         setTimeout(() => {
             blurEffect.style.display = 'none';
         }, 1);
+    });
+}
+
+function aboutContent() {
+    var titleLinks = document.getElementsByClassName("title-link");
+    var titleContents = document.getElementsByClassName("title-content");
+
+    document.getElementById("title-link1").addEventListener("click", function() {
+        remvoeInactiveContent();
+
+        document.getElementById("title-link1").classList.add("active-link");
+        document.getElementById("education").classList.add("active-content");
+    });
+
+    document.getElementById("title-link2").addEventListener("click", function() {
+        remvoeInactiveContent();
+
+        document.getElementById("title-link2").classList.add("active-link");
+        document.getElementById("skills").classList.add("active-content");
+    });
+
+    document.getElementById("title-link3").addEventListener("click", function() {
+        remvoeInactiveContent();
+
+        document.getElementById("title-link3").classList.add("active-link");
+        document.getElementById("experience").classList.add("active-content");
+    });
+
+    function remvoeInactiveContent() {
+        for (titleLink of titleLinks)
+            titleLink.classList.remove("active-link");
+
+        for (titleContent of titleContents)
+            titleContent.classList.remove("active-content");
     }
 }
 
