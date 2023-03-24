@@ -2,7 +2,6 @@ hamburgerMenu();
 aboutContent();
 resize();
 
-
 function hamburgerMenu() {
     var sideMenu = document.getElementById("side-menu");
     var blurEffect = document.getElementById("blur-overlay");
@@ -66,7 +65,7 @@ function resize() {
     const chickenWebsite = document.getElementById('chicken-website');
     const paint = document.getElementById('paint');
 
-    if (window.innerWidth < 1500) {
+    if (window.innerWidth < 1000) {
         chickenWebsite.src = '/pictures/chicken-website-mobile.webp';
         paint.src = '/pictures/paint-mobile.webp';
     } else {
