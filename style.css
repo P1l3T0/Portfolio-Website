@@ -479,6 +479,27 @@ form .submit-button {
     font-weight: 700;
 }
 
+.gotop {
+    position: fixed;
+    width: 3.2rem;
+    height: 3.2rem;
+    bottom: 1rem;
+    right: 2.5rem;
+    font-size: 2.5rem;
+    background: rgb(22, 27, 31);
+    color: white;
+    border-radius: 50%;
+}
+
+.gotop:hover {
+    color: rgb(53, 136, 204);
+    transition: 500ms ease;
+}
+
+.gotop:not(:hover) {
+    transition: 500ms ease;
+}
+
 /*!-------------SMALL-SCREEN-------------*/
 
 nav .fa-regular,
@@ -558,6 +579,10 @@ nav .fa-solid {
 
     .title-link.active-link {
         transform: scale(1);
+    }
+
+    .gotop {
+        right: .2rem;
     }
 }
 
