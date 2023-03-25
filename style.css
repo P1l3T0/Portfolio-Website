@@ -480,10 +480,9 @@ form .submit-button {
 }
 
 .gotop {
-    position: fixed;
+    position: absolute;
     width: 3.2rem;
     height: 3.2rem;
-    bottom: 1rem;
     right: 2.5rem;
     font-size: 2.5rem;
     background: rgb(22, 27, 31);
