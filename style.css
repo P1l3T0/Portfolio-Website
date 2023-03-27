@@ -306,7 +306,7 @@ nav ul li a:hover::before {
 }
 
 .work:hover img {
-    filter: blur(7px);
+    filter: blur(3px);
 }
 
 .layer h1 {
