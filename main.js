@@ -31,21 +31,21 @@ function aboutContent() {
     var titleLinks = document.getElementsByClassName("title-link");
     var titleContents = document.getElementsByClassName("title-content");
 
-    document.getElementById("title-link1").addEventListener("click", function() {
+    document.getElementById("title-link1").addEventListener("click", function () {
         remvoeInactiveContent();
 
         document.getElementById("title-link1").classList.add("active-link");
         document.getElementById("education").classList.add("active-content");
     });
 
-    document.getElementById("title-link2").addEventListener("click", function() {
+    document.getElementById("title-link2").addEventListener("click", function () {
         remvoeInactiveContent();
 
         document.getElementById("title-link2").classList.add("active-link");
         document.getElementById("skills").classList.add("active-content");
     });
 
-    document.getElementById("title-link3").addEventListener("click", function() {
+    document.getElementById("title-link3").addEventListener("click", function () {
         remvoeInactiveContent();
 
         document.getElementById("title-link3").classList.add("active-link");
@@ -75,3 +75,11 @@ function resize() {
 
     window.addEventListener('resize', resize);
 }
+
+$('input').focus(function () {
+    $('footer').addClass('hide-footer');
+});
+
+$('input').focusout(function () {
+    $('footer').removeClass('hide-footer');
+});

@@ -635,4 +635,8 @@ nav .fa-solid {
     .footer-content h3 {
         font-size: 1.5rem;
     }
+
+    .hide-footer {
+        display: none;
+    }
 }
