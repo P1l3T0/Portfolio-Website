@@ -66,11 +66,11 @@ function resize() {
     const paint = document.getElementById('paint');
 
     if (window.innerWidth < 1000) {
-        chickenWebsite.src = '/pictures/chicken-website-mobile.webp';
-        paint.src = '/pictures/paint-mobile.webp';
+        chickenWebsite.src = './pictures/chicken-website-mobile.webp';
+        paint.src = './pictures/paint-mobile.webp';
     } else {
-        chickenWebsite.src = '/pictures/chicken-website.webp';
-        paint.src = '/pictures/paint.webp';
+        chickenWebsite.src = './pictures/chicken-website.webp';
+        paint.src = './pictures/paint.webp';
     }
 
     window.addEventListener('resize', resize);
