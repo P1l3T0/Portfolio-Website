@@ -30,6 +30,17 @@
     text-align: center;
 }
 
+html, 
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 6rem;
+}
+
 body {
     background: rgb(25, 29, 32);
 }
@@ -440,15 +451,15 @@ form .submit-button {
 
 /*!-------------FOOTER-------------*/
 
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+footer {
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    padding: 1.25rem 0;
     text-align: center;
-    padding: 1.25rem;
+    position: absolute;
     background-color: rgb(29, 36, 41);
     border-top: 1px solid rgb(29, 32, 50);
-    text-shadow: 3px 3px 5px rgb(24, 24, 24);
 }
 
 .footer-content h3 {
@@ -456,6 +467,7 @@ form .submit-button {
     color: #fff;
     font-size: 2rem;
     font-weight: 700;
+    text-shadow: 3px 3px 5px rgb(24, 24, 24);
 }
 
 /*!-------------SMALL-SCREEN-------------*/
@@ -634,9 +646,5 @@ nav .fa-solid {
 
     .footer-content h3 {
         font-size: 1.5rem;
-    }
-
-    .hide-footer {
-        display: none;
     }
 }

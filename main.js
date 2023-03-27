@@ -75,7 +75,3 @@ function resize() {
 
     window.addEventListener('resize', resize);
 }
-
-// PUSH FOOTER TO BOTTOM
-var innerScreenHeight = window.innerHeight;
-document.querySelector("#footer").style.top = innerScreenHeight + "px";
