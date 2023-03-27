@@ -101,7 +101,7 @@ nav ul li a:hover::before {
 
 .header-text {
     margin-top: 17%;
-    padding: 0 4rem;
+    padding: 0 2rem;
 }
 
 .header-text h1 {
@@ -166,8 +166,9 @@ nav ul li a:hover::before {
 }
 
 .about-col1 img {
-    max-width: 100%;
-    padding: 1rem;
+    max-width: 85%;
+    /* max-height: 70%; */
+    padding: .5rem;
     border-radius: 2rem;
 }
 
@@ -379,26 +380,6 @@ nav ul li a:hover::before {
     transform: translateY(-5px);
 }
 
-.button {
-    font-size: 2rem;
-    font-weight: 800;
-    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
-    display: block;
-    text-align: center;
-    margin: 3rem 0 0 0;
-    padding: 1rem;
-    width: fit-content;
-    border: 2px solid rgb(53, 136, 204);
-    border-radius: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: 1s ease-in-out;
-}
-
-.button:hover {
-    background-color: rgb(53, 136, 204);
-}
-
 .submit-button.submit-button2 {
     display: flex;
 }
@@ -464,7 +445,6 @@ form .submit-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
     padding: 1.25rem;
     background-color: rgb(29, 36, 41);
@@ -479,26 +459,6 @@ form .submit-button {
     font-weight: 700;
 }
 
-.gotop {
-    position: absolute;
-    width: 3.2rem;
-    height: 3.2rem;
-    right: 2.5rem;
-    font-size: 2.5rem;
-    background: rgb(22, 27, 31);
-    color: white;
-    border-radius: 50%;
-}
-
-.gotop:hover {
-    color: rgb(53, 136, 204);
-    transition: 500ms ease;
-}
-
-.gotop:not(:hover) {
-    transition: 500ms ease;
-}
-
 /*!-------------SMALL-SCREEN-------------*/
 
 nav .fa-regular,
@@ -506,7 +466,34 @@ nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width: 660px) {
+@media (width <= 1500px) {
+    #about,
+    #projects,
+    #contacts {
+        text-align: center;
+    }
+
+    .about-col1,
+    .about-col2,
+    .contacts-left,
+    .contacts-right {
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .submit-button {
+        margin: auto;
+    }
+
+    .title-link {
+        font-size: 1.75rem;
+    }
+}
+
+@media (width <= 660px) {
+    .sub-title {
+        font-size: 3rem;
+    }
 
     /*!-------------HEADER-------------*/
     #blur-overlay {
@@ -533,7 +520,11 @@ nav .fa-solid {
     }
 
     .header-text h1 {
-        font-size: 3.9rem;
+        font-size: 3rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
     }
 
     nav ul {
@@ -580,32 +571,7 @@ nav .fa-solid {
         transform: scale(1);
     }
 
-    .gotop {
-        right: .2rem;
-    }
-}
-
-
-@media only screen and (max-width: 1500px) {
     /*!-------------ABOUT-------------*/
-
-    .container {
-        text-align: center;
-    }
-
-    .sub-title {
-        font-size: 4rem;
-    }
-
-    .about-col1,
-    .about-col2 {
-        flex-basis: 100%;
-    }
-
-    .about-col1 {
-        margin-bottom: 2rem;
-    }
-
     .about-text {
         margin: .5rem 0;
     }
@@ -636,35 +602,38 @@ nav .fa-solid {
         margin: .5rem 0 0 0;
     }
 
-    /*!-------------CONTACTS-------------*/
-
-    #contacts {
-        height: auto;
+    /*!-------------PROJECTS-------------*/
+    .layer h1 {
+        font-size: 3rem;
+    }
+    
+    .layer p {
+        font-size: 1.5rem;
+    }
+    
+    .layer a i {
+        font-size: 2rem;
+        color: rgb(53, 136, 204);
     }
 
-    .contacts-left,
-    .contacts-right {
-        flex-basis: 100%;
-        align-items: center;
-        text-align: center;
+    /*!-------------CONTACTS-------------*/
+    .contacts-left {
         margin: 0;
     }
 
-    .submit-button,
-    .button {
-        margin: 3rem auto;
-    }
-
-    .contacts-left h1 {
-        font-size: 5rem;
-    }
-
     .contacts-left p {
-        font-size: 2.5rem;
+        font-size: 1.75rem;
     }
 
-    .contacts-left,
-    .contacts-right {
-        flex-basis: 100%;
+    .contacts-left p i {
+        font-size: 1.25rem;
+    }
+
+    .social-icons a i {
+        font-size: 2rem;
+    }
+
+    .footer-content h3 {
+        font-size: 1.5rem;
     }
 }
