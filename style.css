@@ -337,7 +337,7 @@ nav ul li a:hover::before {
 /*!-------------CONTACTS-------------*/
 
 #contacts {
-    height: 85vh;
+    height: 90vh;
 }
 
 .contacts-left {
@@ -416,7 +416,7 @@ form textarea {
 
 form .submit-button {
     padding: 1rem;
-    margin-top: 1.25rem;
+    /* margin-top: 1.25rem; */
 }
 
 .submit-button {
@@ -436,29 +436,6 @@ form .submit-button {
 
 .submit-button:hover {
     background-color: rgb(53, 136, 204);
-}
-
-/*!-------------FOOTER-------------*/
-
-footer {
-    position: relative;
-}
-
-.footer-content {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    padding: 1.25rem 0;
-    background-color: rgb(29, 36, 41);
-    border-top: 1px solid rgb(29, 32, 50);
-}
-
-.footer-content h3 {
-    font-family: "Popins", sans-serif;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 700;
-    text-shadow: 3px 3px 5px rgb(24, 24, 24);
 }
 
 /*!-------------SMALL-SCREEN-------------*/
@@ -484,7 +461,7 @@ nav .fa-solid {
     }
 
     .submit-button {
-        margin: auto;
+        margin: 3rem auto;
     }
 
     .title-link {
@@ -619,6 +596,11 @@ nav .fa-solid {
     }
 
     /*!-------------CONTACTS-------------*/
+
+    #contacts {
+        height: 87vh;
+    }
+    
     .contacts-left {
         margin: 0;
     }
@@ -634,8 +616,14 @@ nav .fa-solid {
     .social-icons a i {
         font-size: 2rem;
     }
+}
 
-    .footer-content h3 {
-        font-size: 1.5rem;
+@media screen and (width <= 1300px) and (height <= 500px) {
+    .header-text {
+        margin-top: 10%;
+    }
+    
+    .header-text h1 {
+        font-size: 3.5rem;
     }
 }

@@ -1,7 +1,6 @@
 hamburgerMenu();
 aboutContent();
 resize();
-fixFooter();
 
 function hamburgerMenu() {
     var sideMenu = document.getElementById("side-menu");
@@ -75,28 +74,4 @@ function resize() {
     }
 
     window.addEventListener('resize', resize);
-}
-
-function fixFooter() {
-    const textField = document.querySelector('#text-field');
-    const emailField = document.querySelector('#email-field');
-    const textareaField = document.querySelector('#textarea-field');
-    const footer = document.querySelector('#footer');
-
-    textField.addEventListener('focus', hideFooter);
-    textField.addEventListener('blur', showFooter);
-
-    emailField.addEventListener('focus', hideFooter);
-    emailField.addEventListener('blur', showFooter);
-
-    textareaField.addEventListener('focus', hideFooter);
-    textareaField.addEventListener('blur', showFooter);
-
-    function hideFooter() {
-        footer.style.display = 'none';
-    }
-
-    function showFooter() {
-        footer.style.display = 'block';
-    }
 }
