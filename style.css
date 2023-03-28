@@ -498,6 +498,10 @@ nav .fa-solid {
         background-image: url("./pictures/phone-background.webp");
     }
 
+    .header-text {
+        margin-top: 100%;
+    }
+
     .header-text h1 {
         font-size: 3rem;
     }
