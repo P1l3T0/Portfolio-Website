@@ -100,8 +100,9 @@ nav ul li a:hover::before {
 }
 
 .header-text {
-    margin-top: 30%;
-    padding: 0 2rem;
+    position: absolute;
+    bottom: 1rem;
+    padding: 0 1rem;
 }
 
 .header-text h1 {
@@ -113,7 +114,7 @@ nav ul li a:hover::before {
 }
 
 .header-text p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     text-shadow: rgb(0, 0, 0) 2px 2px 4px;
 }
@@ -416,7 +417,6 @@ form textarea {
 
 form .submit-button {
     padding: 1rem;
-    /* margin-top: 1.25rem; */
 }
 
 .submit-button {
@@ -499,11 +499,15 @@ nav .fa-solid {
     }
 
     .header-text {
-        margin-top: 100%;
+        bottom: 1rem;
     }
 
     .header-text h1 {
         font-size: 3rem;
+    }
+
+    .header-text p {
+        font-size: 1.25rem;
     }
 
     nav ul {
@@ -618,12 +622,12 @@ nav .fa-solid {
     }
 }
 
-@media screen and (width <= 1300px) and (height <= 500px) {
-    .header-text {
-        margin-top: 10%;
-    }
-    
+@media screen and (orientation: landscape) and (width <= 1000px) and (height <= 550px) {
     .header-text h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
+    }
+
+    .header-text p {
+        font-size: 1.5rem;
     }
 }

@@ -1,6 +1,7 @@
 hamburgerMenu();
 aboutContent();
 resize();
+// checkOrientation();
 
 function hamburgerMenu() {
     var sideMenu = document.getElementById("side-menu");
@@ -75,3 +76,14 @@ function resize() {
 
     window.addEventListener('resize', resize);
 }
+
+// function checkOrientation() {
+//     window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
+//         const portrait = e.matches;
+
+//         if (portrait)
+//             alert("you are in portrait")
+//         else 
+//             alert("you are in landscape")
+//     });
+// }
