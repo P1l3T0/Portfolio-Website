@@ -2,7 +2,7 @@
 
 ## Overview
 
-This portfolio website was created to showcase information about me, my skills and my projects to potential employers or clients   
+This portfolio website was created to showcase information about me, my skills and my projects
 
 ## Features
 
