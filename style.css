@@ -6,7 +6,7 @@
     color: white;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 1px #00ff15; */
+    outline: solid 1px #00ff15;
 }
 
 ::-webkit-scrollbar {
@@ -155,15 +155,19 @@ nav ul li a:hover::before {
 }
 
 .about-col1 .fa-html5:hover {
-    color: rgb(246, 160, 0);
+    color: rgb(227,76,38);
 }
 
 .about-col1 .fa-css3-alt:hover {
-    color: rgb(0, 135, 246);
+    color: rgb(38,77,228);
 }
 
 .about-col1 .fa-js:hover {
-    color: rgb(246, 255, 0);
+    color: rgb(240,219,79);
+}
+
+.about-col1 .fa-react:hover {
+    color: rgb(97,219,251);
 }
 
 .about-col1 img {
