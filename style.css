@@ -557,6 +557,7 @@ nav .fa-solid {
     /*!-------------ABOUT-------------*/
     .about-text {
         margin: .5rem 0;
+        max-width: 60ch;
     }
 
     .about-text h2 {
