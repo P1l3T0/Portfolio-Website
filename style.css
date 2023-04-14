@@ -6,7 +6,7 @@
     color: white;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 1px #00ff15; */
+    outline: solid 1px #00ff15;
 }
 
 ::-webkit-scrollbar {
@@ -342,7 +342,7 @@ nav ul li a:hover::before {
 /*!-------------CONTACTS-------------*/
 
 #contacts {
-    height: 90vh;
+    /* height: auto; */
 }
 
 .contacts-left {
@@ -472,7 +472,7 @@ nav .fa-solid {
 
 @media (width <= 660px) {
     .sub-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     /*!-------------HEADER-------------*/
@@ -556,6 +556,10 @@ nav .fa-solid {
     }
 
     /*!-------------ABOUT-------------*/
+    .about-col1 i {
+        font-size: 2.5rem;
+    }
+    
     .about-text {
         margin: .5rem 0;
     }
@@ -566,7 +570,6 @@ nav .fa-solid {
 
     .about-text p {
         font-size: 1.25rem;
-        width: clamp(45ch, 50%, 75ch);
     }
 
     .title-content ul li p {
@@ -604,7 +607,7 @@ nav .fa-solid {
     /*!-------------CONTACTS-------------*/
 
     #contacts {
-        height: 87vh;
+        height: auto;
     }
     
     .contacts-left {
@@ -621,6 +624,11 @@ nav .fa-solid {
 
     .social-icons a i {
         font-size: 2rem;
+    }
+
+    .contacts-left button,
+    .contacts-right button {
+        font-size: 1.5rem;
     }
 }
 
