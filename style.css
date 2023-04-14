@@ -6,7 +6,7 @@
     color: white;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    outline: solid 1px #00ff15;
+    /* outline: solid 1px #00ff15; */
 }
 
 ::-webkit-scrollbar {
