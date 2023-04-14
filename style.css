@@ -6,7 +6,7 @@
     color: white;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    outline: solid 1px #00ff15;
+    /* outline: solid 1px #00ff15; */
 }
 
 ::-webkit-scrollbar {
@@ -419,15 +419,11 @@ form textarea {
     resize: none;
 }
 
-form .submit-button {
-    padding: 1rem;
-}
-
-.submit-button {
+button {
     cursor: pointer;
     font-size: 2rem;
     font-weight: 800;
-    padding: .5rem;
+    padding: .5em;
     border-radius: 15px;
     border: 2px solid rgb(53, 136, 204);
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
@@ -438,7 +434,11 @@ form .submit-button {
     background-color: transparent;
 }
 
-.submit-button:hover {
+button a {
+    text-decoration: none;
+}
+
+button:hover {
     background-color: rgb(53, 136, 204);
 }
 

@@ -73,5 +73,5 @@ function resize() {
         paint.src = './pictures/paint.webp';
     }
 
-    window.addEventListener('resize', resize);
+    window.addEventListener("resize", resize);
 }
