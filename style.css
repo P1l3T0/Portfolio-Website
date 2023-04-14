@@ -384,10 +384,6 @@ nav ul li a:hover::before {
     transform: translateY(-5px);
 }
 
-.submit-button.submit-button2 {
-    display: flex;
-}
-
 /*?-------------SUBMIT-FORM-------------*/
 
 .contacts-right form {
@@ -464,7 +460,7 @@ nav .fa-solid {
         align-items: center;
     }
 
-    .submit-button {
+    button {
         margin: 3rem auto;
     }
 
