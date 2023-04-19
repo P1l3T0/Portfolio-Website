@@ -16,6 +16,7 @@ Contact section - Provides a contact form for users to send me their messages vi
 HTML - Used to create the structure and content <br>
 CSS - Used to style the layout and design <br>
 JavaScript - Used to add interactivity to the portfolio <br>
+React - Chosen JavaScript framework <br>
 Microsoft Visual Studio Code - IDE used for writing the source code
 
 ## Credits

@@ -148,25 +148,30 @@ nav ul li a:hover::before {
     text-transform: uppercase;
 }
 
-.about-col1 i {
+.tech-icons {
     font-size: 3rem;
     margin: 0 1rem;
     transition: 1s ease-in-out;
 }
 
-.about-col1 .fa-html5:hover {
+.tech-stack .tech-icons:nth-child(n) > path {
+    transition: 750ms ease-in-out;
+}
+
+
+.tech-stack .tech-icons:nth-child(1):hover > path {
     color: rgb(227,76,38);
 }
 
-.about-col1 .fa-css3-alt:hover {
+.tech-stack .tech-icons:nth-child(2):hover > path {
     color: rgb(38,77,228);
 }
 
-.about-col1 .fa-js:hover {
+.tech-stack .tech-icons:nth-child(3):hover > path {
     color: rgb(240,219,79);
 }
 
-.about-col1 .fa-react:hover {
+.tech-stack .tech-icons:nth-child(4):hover > path {
     color: rgb(97,219,251);
 }
 
@@ -208,44 +213,48 @@ nav ul li a:hover::before {
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
 }
 
-.title-link:hover {
+.title-link:hover,
+.active-link:hover {
     transform: translateY(-5px);
     color: rgb(37, 157, 255);
 }
 
-.title-link.active-link {
-    color: rgb(53, 136, 204);
+.active-link {
+    color: rgb(3, 119, 214);
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 2rem;
+    transition: 1s ease-in-out;
+    text-transform: uppercase;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
 }
 
 /*?-------------INFORMATION-------------*/
 
-.title-content {
+.active-content {
     height: 50vh;
-    display: none;
+    display: block;
+    animation: fade-in 1s ease-in-out;
 }
 
-.title-content ul li {
+.active-content ul li {
     list-style: none;
     margin: 1.5rem 0;
     line-height: 2rem;
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
 }
 
-.title-content ul li h4 {
+.active-content ul li h4 {
     font-weight: 600;
     font-size: 1.75rem;
     color: rgb(53, 136, 204);
     text-transform: uppercase;
 }
 
-.title-content ul li p {
+.active-content ul li p {
     font-size: 1.5rem;
     margin: .5rem 0;
-}
-
-.title-content.active-content {
-    display: block;
-    animation: fade-in 1s ease-in-out;
 }
 
 @keyframes fade-in {
@@ -330,12 +339,15 @@ nav ul li a:hover::before {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    background: #fff;
+    background: white;
 }
 
-.layer a i {
+.layer a .icon {
     margin: 1rem;
     font-size: 2rem;
+}
+
+.layer a .icon > path{
     color: rgb(53, 136, 204);
 }
 
@@ -354,9 +366,13 @@ nav ul li a:hover::before {
     font-weight: 600;
 }
 
-.contacts-left p i {
-    color: rgb(53, 136, 204);
+.contacts-left p .icon {
     font-size: 2rem;
+    margin: 0 1rem 0 0;
+}
+
+.contacts-left p .icon > path {
+    color: rgb(53, 136, 204);
 }
 
 .social-icons {
@@ -367,14 +383,22 @@ nav ul li a:hover::before {
 .social-icons a {
     text-decoration: none;
     display: inline-block;
-    margin: 1rem .5rem;
+    margin: 1rem .75rem;
 }
 
-.social-icons a i {
+.social-icons a  {
     transition: 750ms ease-in-out;
 }
 
-.social-icons a i:hover {
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons .icon > path {
+    transition: 750ms ease-in-out;
+}
+
+.social-icons .icon:hover > path {
     color: rgb(53, 136, 204);
     transform: translateY(-5px);
 }
@@ -421,7 +445,7 @@ button {
     display: block;
     width: fit-content;
     text-transform: uppercase;
-    transition: 1s ease-in-out;
+    transition: 750ms ease-in-out;
     background-color: transparent;
 }
 
@@ -436,8 +460,7 @@ button:hover {
 
 /*!-------------SMALL-SCREEN-------------*/
 
-nav .fa-regular,
-nav .fa-solid {
+nav .icon {
     display: none;
 }
 
@@ -484,8 +507,7 @@ nav .fa-solid {
         justify-content: right;
     }
 
-    nav .fa-regular,
-    nav .fa-solid {
+    nav .icon {
         display: block;
         font-size: 1.5rem;
     }
@@ -527,14 +549,14 @@ nav .fa-solid {
         font-size: 1.5rem;
     }
 
-    nav ul .fa-regular {
+    nav ul .icon {
         position: absolute;
         top: 1.5rem;
         left: 1.5rem;
         cursor: pointer;
     }
 
-    .fa-bars {
+    nav .icon {
         cursor: pointer;
     }
 
@@ -542,12 +564,20 @@ nav .fa-solid {
         font-size: 3.5rem;
     }
 
-    .title-link:hover {
-        transform: scale(1.1);
+    #title-link1,
+    #title-link2,
+    #title-link3 {
+        margin: .5rem 0;
     }
 
-    .title-link.active-link {
-        transform: scale(1);
+    .active-link {
+        font-size: 2rem;
+    }
+
+    .title-link:hover,
+    .active-link:hover {
+        transform: translateY(0);
+        transform: scale(1.05);
     }
 
     /*!-------------ABOUT-------------*/
@@ -567,12 +597,12 @@ nav .fa-solid {
         font-size: 1.25rem;
     }
 
-    .title-content ul li p {
+    .active-content ul li p {
         font-size: 1.25rem;
         line-height: 1.5rem;
     }
 
-    .title-content ul li h4 {
+    .active-content ul li h4 {
         font-size: 1.5rem;
     }
 
@@ -613,11 +643,11 @@ nav .fa-solid {
         font-size: 1.75rem;
     }
 
-    .contacts-left p i {
+    .contacts-left p .icon {
         font-size: 1.25rem;
     }
 
-    .social-icons a i {
+    .social-icons a .icon {
         font-size: 2rem;
     }
 
