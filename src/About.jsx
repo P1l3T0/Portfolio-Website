@@ -19,7 +19,7 @@ export function About() {
                 <h1 class="sub-title">About <span>me</span></h1>
                 <div class="row">
                     <div class="about-col1">
-                        <img src="./pictures/pileshkiq-samurai.webp" alt="picture of me with my katana" />
+                        <img src="./src/pictures/pileshkiq-samurai.webp" alt="picture of me with my katana" />
                         <h2>Technologies</h2>
                         <div className="tech-stack">
                             <FontAwesomeIcon icon={faHtml5} className="tech-icons" />

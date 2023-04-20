@@ -7,11 +7,11 @@ export function Projects() {
         const paint = document.getElementById('paint');
 
         if (window.innerWidth < 1000) {
-            chickenWebsite.src = './pictures/chicken-website-mobile.webp';
-            paint.src = './pictures/paint-mobile.webp';
+            chickenWebsite.src = './src/pictures/chicken-website-mobile.webp';
+            paint.src = './src/pictures/paint-mobile.webp';
         } else {
-            chickenWebsite.src = './pictures/chicken-website.webp';
-            paint.src = './pictures/paint.webp';
+            chickenWebsite.src = './src/pictures/chicken-website.webp';
+            paint.src = './src/pictures/paint.webp';
         }
     }
     window.addEventListener("resize", resize);
@@ -22,8 +22,7 @@ export function Projects() {
             <div class="projects-container">
                 <div class="work-list">
                     <div class="work">
-                        <img src="./pictures/chicken-website.webp" id="chicken-website"
-                            alt="picture of my chicken website" />
+                        <img src="./src/pictures/chicken-website.webp" id="chicken-website" alt="picture of my chicken website" />
                         <div class="layer">
                             <h1>Chicken Website</h1>
                             <p>
@@ -35,7 +34,7 @@ export function Projects() {
                         </div>
                     </div>
                     <div class="work">
-                        <img src="./pictures/paint.webp" id="paint" alt="picture of my shape editor application" />
+                        <img src="./src/pictures/paint.webp" id="paint" alt="picture of my shape editor application" />
                         <div class="layer">
                             <h1>2D Shape Editor</h1>
                             <p>
