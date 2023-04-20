@@ -15,11 +15,11 @@ export function About() {
 
     return (
         <div id="about">
-            <div class="container">
-                <h1 class="sub-title">About <span>me</span></h1>
-                <div class="row">
-                    <div class="about-col1">
-                        <img src="./src/pictures/pileshkiq-samurai.webp" alt="picture of me with my katana" />
+            <div className="container">
+                <h1 className="sub-title">About <span>me</span></h1>
+                <div className="row">
+                    <div className="about-col1">
+                        <img src="./dist/assets/pileshkiq-samurai.webp" alt="picture of me with my katana" />
                         <h2>Technologies</h2>
                         <div className="tech-stack">
                             <FontAwesomeIcon icon={faHtml5} className="tech-icons" />
@@ -28,8 +28,8 @@ export function About() {
                             <FontAwesomeIcon icon={faReact} className="tech-icons" />
                         </div>
                     </div>
-                    <div class="about-col2">
-                        <div class="about-text">
+                    <div className="about-col2">
+                        <div className="about-text">
                             <h2>Hi, I'm Vasil</h2>
                             <p>
                                 I'm a 20 year old student currently pursuing a degree in
@@ -44,7 +44,7 @@ export function About() {
                             </p>
                         </div>
 
-                        <div class="title-cards" id="title-link">
+                        <div className="title-cards" id="title-link">
                             <h3
                                 id="title-link1"
                                 className={activeLink === "title-link1" ? "active-link" : "title-link"}

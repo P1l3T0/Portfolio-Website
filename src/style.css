@@ -49,7 +49,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background: url("./pictures/cat.webp") no-repeat;
+    background: url("./dist/assets/cat.webp") no-repeat;
     background-size: cover;
 }
 
@@ -513,7 +513,7 @@ nav .icon {
     }
 
     #header {
-        background-image: url("./pictures/phone-background.webp");
+        background-image: url("./dist/assets/phone-background.webp");
     }
 
     .header-text {

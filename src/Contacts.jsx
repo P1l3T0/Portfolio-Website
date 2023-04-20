@@ -4,14 +4,14 @@ import { faGithub, faLinkedinIn, faTwitter, faInstagram, faYoutube } from "@fort
 
 export function Contacts() {
     return (
-        <div div id="contacts" >
-            <div class="container">
-                <h1 class="sub-title">Contact <span>me</span></h1>
-                <div class="row">
-                    <div class="contacts-left">
+        <div id="contacts" >
+            <div className="container">
+                <h1 className="sub-title">Contact <span>me</span></h1>
+                <div className="row">
+                    <div className="contacts-left">
                         <p><FontAwesomeIcon icon={faPaperPlane} className="icon" />vgan3v@gmail.com</p>
-                        <i class="fa-solid fa-regular fa-paper-plane"></i>
-                        <div class="social-icons">
+                        <i className="fa-solid fa-regular fa-paper-plane"></i>
+                        <div className="social-icons">
                             <a href="https://github.com/P1l3T0" target="_blank">
                                 <FontAwesomeIcon icon={faGithub} className="icon" />
                             </a>
@@ -26,7 +26,7 @@ export function Contacts() {
                         </div>
                         <button><a href="CV.pdf" download>download CV</a></button>
                     </div>
-                    <div class="contacts-right">
+                    <div className="contacts-right">
                         <form action="https://formsubmit.co/vgan3v@gmail.com" method="POST">
                             <input type="text" name="text" id="text-field" placeholder="Your name" required />
                             <input type="email" name="email" id="email-field" placeholder="Your email" required />
