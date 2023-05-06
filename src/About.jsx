@@ -30,7 +30,7 @@ export function About() {
                     </div>
                     <div className="about-col2">
                         <div className="about-text">
-                            <h2>Hi, I'm Vasil</h2>
+                            <h2>Hi, I'm <span style={{ color: "rgb(53, 136, 204)" }}>Vasil</span></h2>
                             <p>
                                 I'm a 20 year old student currently pursuing a degree in
                                 Computer Science at Technical University of Sofia. From
@@ -38,9 +38,9 @@ export function About() {
                                 they function and that's how I got this passion for coding
                                 and wanting to create software for various purposes. {<br />}
                                 It all started with making simple games in the Unity game engine
-                                and years later I'm here, fully focused on front-end, currently
-                                working on various projects made for either practise or real
-                                use (it's a secret big project) and upgrading my skills as a developer.
+                                and years later I'm here, fully focused on front-end web technologies,
+                                currently working on various projects made for either practise or real
+                                use and upgrading my skills as a developer.
                             </p>
                         </div>
 
@@ -86,7 +86,7 @@ export function About() {
                                         </li>
                                         <li>
                                             <h4>2016 - 2021</h4>
-                                            <p>PMG Sliven</p>
+                                            <p>Science and Mathematics High School "Dobri Chintulov", Sliven</p>
                                         </li>
                                     </ul>
                                 )}
