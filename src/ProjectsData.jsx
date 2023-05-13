@@ -10,7 +10,7 @@ export const data = [{
     id: 2,
     name: "2D Shape Editor",
     id: "paint",
-    src: "./assets/chicken-website.webp",
+    src: "./assets/paint.webp",
     alt: "picture of my shape editor application",
     description: "Application for creating 2D shapes and drawing with freehand, using vector graphics, created with C# and Windows Forms",
     link: "https://github.com/P1l3T0/2D-Shape-Editor"
