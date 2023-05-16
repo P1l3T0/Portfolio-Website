@@ -24,7 +24,7 @@ export function Contacts() {
                             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
                                 <FontAwesomeIcon icon={faYoutube} className="icon" /></a>
                         </div>
-                        <button><a href="/CV.pdf" download>download CV</a></button>
+                        <button><a href="./CV.pdf" download>download CV</a></button>
                     </div>
                     <div className="contacts-right">
                         <form action="https://formsubmit.co/vgan3v@gmail.com" method="POST">
