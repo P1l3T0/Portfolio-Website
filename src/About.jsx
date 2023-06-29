@@ -122,7 +122,11 @@ export function About() {
                                 {activeLink === "title-link3" && (
                                     <ul>
                                         <li>
-                                            <h4>frontend-tajiq</h4>
+                                            <h4>2023 - current </h4>
+                                            <p>Landed an internship with Progress Software</p>
+                                        </li>
+                                        <li>
+                                            <h4>saitajiq</h4>
                                             <p>Pravq saitove za maika mi i TU Sliven 💀💀💀</p>
                                         </li>
                                     </ul>
