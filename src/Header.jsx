@@ -43,7 +43,6 @@ export function Header() {
 
                 <div className="header-text">
                     <h1>Hello,<br />I'm <span>P1l3T0</span></h1>
-                    <p>Front-end developer (on occasions back-end with C#)</p>
                 </div>
             </div>
         </div>

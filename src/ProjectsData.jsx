@@ -4,7 +4,7 @@ export const data = [{
     id: "chicken-website",
     src: "./assets/chicken-website.webp",
     alt: "picture of my chicken website",
-    description: "Website, dedicated to chicken, created using HTML, CSS, JavaScript and PHP for the server side",
+    description: "Website, dedicated to chicken, created using vanilla HTML, CSS, JavaScript and PHP for the server side",
     link: "https://github.com/P1l3T0/Chicken-Website"
 }, {
     id: 2,

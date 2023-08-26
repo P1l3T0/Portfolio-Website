@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 export function Projects() {
-    function resize() {
+    window.addEventListener("resize", function () {
         const chickenWebsite = document.getElementById('chicken-website');
         const paint = document.getElementById('paint');
 
@@ -14,8 +14,7 @@ export function Projects() {
             chickenWebsite.src = './assets/chicken-website.webp';
             paint.src = './assets/paint.webp';
         }
-    }
-    window.addEventListener("resize", resize);
+    });
 
     return (
         <div id="projects" >
@@ -35,7 +34,7 @@ export function Projects() {
                     )}
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 

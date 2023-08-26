@@ -30,17 +30,11 @@ export function About() {
                     </div>
                     <div className="about-col2">
                         <div className="about-text">
-                            <h2>Hi, I'm <span style={{ color: "rgb(53, 136, 204)" }}>Vasil</span></h2>
+                            <h2>Hi, my name's <span style={{ color: "rgb(53, 136, 204)" }}>Vasil</span></h2>
                             <p>
-                                I'm a 20 year old student currently pursuing a degree in
-                                Computer Science at Technical University of Sofia. From
-                                an young age I've had an obsession with computers and how
-                                they function and that's how I got this passion for coding
-                                and wanting to create software for various purposes. It all
-                                started with making simple games in the Unity game engine and years
-                                later I'm here, fully focused on front-end web technologies, currently
-                                working on various projects made for either practise or real use and
-                                upgrading my skills as a developer.
+                                I'm a 20 year old student currently pursuing a degree in <strong>Computer Science </strong>
+                                at Technical University of Sofia. From an young age I've had an obsession with computers and how
+                                they function and that's how I got this passion for coding and wanting to create software for various purposes!
                             </p>
                         </div>
 
@@ -52,7 +46,7 @@ export function About() {
                                     removeInactiveContent();
                                     handleLinkClick("title-link1");
                                 }}
-                            >education
+                            >experience
                             </h3>
 
                             <h3
@@ -72,21 +66,21 @@ export function About() {
                                     removeInactiveContent();
                                     handleLinkClick("title-link3");
                                 }}
-                            >experience
+                            >education
                             </h3>
                         </div>
 
                         {activeLink === "title-link1" && (
-                            <div id="education" className="active-content">
+                            <div id="experience" className="active-content">
                                 {activeLink === "title-link1" && (
                                     <ul>
                                         <li>
-                                            <h4>2021 - current</h4>
-                                            <p>Computer Science, Technical University of Sofia</p>
+                                            <h4>2023 - current </h4>
+                                            <p>Software Engineer Intern at <strong>Progress Software</strong></p>
                                         </li>
                                         <li>
-                                            <h4>2016 - 2021</h4>
-                                            <p>Science and Mathematics High School "Dobri Chintulov", Sliven</p>
+                                            <h4>saitajiq</h4>
+                                            <p>Pravq saitove za maika mi i TU Sliven 💀💀💀</p>
                                         </li>
                                     </ul>
                                 )}
@@ -99,17 +93,18 @@ export function About() {
                                     <ul>
                                         <li>
                                             <h4>front-end</h4>
-                                            <p>HTML, CSS, JavaScript and currently learning React</p>
+                                            <p>Fluent with the <strong>DOM elements</strong>, and with
+                                                a great understanding of the <strong>React</strong> framework</p>
                                         </li>
                                         <li>
                                             <h4>back-end</h4>
-                                            <p>C# and .NET Framework</p>
+                                            <p>.NET Family - <strong>ASP.NET MVC / Core</strong></p>
                                         </li>
                                         <li>
                                             <h4>team player</h4>
                                             <p>
-                                                Great at working with a serious and passionate team,
-                                                ready to achieve their desired goal
+                                                Great at working with a serious and passionate
+                                                team, ready to achieve their desired goals
                                             </p>
                                         </li>
                                     </ul>
@@ -118,16 +113,16 @@ export function About() {
                         )}
 
                         {activeLink === "title-link3" && (
-                            <div id="experience" className="active-content">
+                            <div id="education" className="active-content">
                                 {activeLink === "title-link3" && (
                                     <ul>
                                         <li>
-                                            <h4>2023 - current </h4>
-                                            <p>Landed an internship with Progress Software</p>
+                                            <h4>2021 - current</h4>
+                                            <p>Bachelor in <strong>Computer Science</strong>, Technical University of Sofia</p>
                                         </li>
                                         <li>
-                                            <h4>saitajiq</h4>
-                                            <p>Pravq saitove za maika mi i TU Sliven 💀💀💀</p>
+                                            <h4>2016 - 2021</h4>
+                                            <p>Science and Mathematics High School "Dobri Chintulov", Sliven</p>
                                         </li>
                                     </ul>
                                 )}
