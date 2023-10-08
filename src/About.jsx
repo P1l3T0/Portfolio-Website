@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faHtml5, faCss3Alt, faBootstrap, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
 
 export function About() {
     const [activeLink, setActiveLink] = useState(null);
@@ -24,6 +24,7 @@ export function About() {
                         <div className="tech-stack">
                             <FontAwesomeIcon icon={faHtml5} className="tech-icons" />
                             <FontAwesomeIcon icon={faCss3Alt} className="tech-icons" />
+                            <FontAwesomeIcon icon={faBootstrap} className="tech-icons" />
                             <FontAwesomeIcon icon={faJs} className="tech-icons" />
                             <FontAwesomeIcon icon={faReact} className="tech-icons" />
                         </div>
@@ -32,7 +33,7 @@ export function About() {
                         <div className="about-text">
                             <h2>Hi, my name's <span style={{ color: "rgb(53, 136, 204)" }}>Vasil</span></h2>
                             <p>
-                                I'm a 20 year old student currently pursuing a degree in <strong>Computer Science </strong>
+                                I'm a 21 year old student currently pursuing a degree in <strong>Computer Science </strong>
                                 at Technical University of Sofia. From an young age I've had an obsession with computers and how
                                 they function and that's how I got this passion for coding and wanting to create software for various purposes!
                             </p>
@@ -98,7 +99,7 @@ export function About() {
                                         </li>
                                         <li>
                                             <h4>back-end</h4>
-                                            <p>.NET Family - <strong>ASP.NET MVC / Core</strong></p>
+                                            <p>.NET Family - <strong> .NET Core / ASP NET MVC / .NET Ajax </strong></p>
                                         </li>
                                         <li>
                                             <h4>team player</h4>

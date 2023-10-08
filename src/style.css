@@ -167,11 +167,16 @@ nav ul li a:hover::before {
     color: rgb(38,77,228);
 }
 
-.tech-stack .tech-icons:nth-child(3):hover > path {
+.tech-stack .tech-icons:nth-child(2):hover > path {
+    color: rgb(136,17,251);
+}
+
+
+.tech-stack .tech-icons:nth-child(4):hover > path {
     color: rgb(240,219,79);
 }
 
-.tech-stack .tech-icons:nth-child(4):hover > path {
+.tech-stack .tech-icons:nth-child(5):hover > path {
     color: rgb(97,219,251);
 }
 
