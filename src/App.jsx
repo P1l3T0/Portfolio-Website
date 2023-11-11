@@ -1,7 +1,7 @@
-import { Header } from "./Header";
-import { About } from "./About";
-import { Projects } from "./Projects";
-import { Contacts } from "./Contacts";
+import Header from "./Header/Header";
+import About from "./About/About";
+import Projects from "./Projects/Projects";
+import Contacts from "./Contact/Contacts";
 
 export default function App() {
     return (

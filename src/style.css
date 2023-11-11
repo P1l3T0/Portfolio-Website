@@ -154,30 +154,30 @@ nav ul li a:hover::before {
     transition: 1s ease-in-out;
 }
 
-.tech-stack .tech-icons:nth-child(n) > path {
+.tech-stack .tech-icons:nth-child(n)>path {
     transition: 750ms ease-in-out;
 }
 
 
-.tech-stack .tech-icons:nth-child(1):hover > path {
-    color: rgb(227,76,38);
+.tech-stack .tech-icons:nth-child(1):hover>path {
+    color: rgb(227, 76, 38);
 }
 
-.tech-stack .tech-icons:nth-child(2):hover > path {
-    color: rgb(38,77,228);
+.tech-stack .tech-icons:nth-child(2):hover>path {
+    color: rgb(38, 77, 228);
 }
 
-.tech-stack .tech-icons:nth-child(2):hover > path {
-    color: rgb(136,17,251);
+.tech-stack .tech-icons:nth-child(3):hover>path {
+    color: rgb(136, 17, 251);
 }
 
 
-.tech-stack .tech-icons:nth-child(4):hover > path {
-    color: rgb(240,219,79);
+.tech-stack .tech-icons:nth-child(4):hover>path {
+    color: rgb(240, 219, 79);
 }
 
-.tech-stack .tech-icons:nth-child(5):hover > path {
-    color: rgb(97,219,251);
+.tech-stack .tech-icons:nth-child(5):hover>path {
+    color: rgb(97, 219, 251);
 }
 
 .about-col1 img {
@@ -352,7 +352,7 @@ nav ul li a:hover::before {
     font-size: 2rem;
 }
 
-.layer a .icon > path{
+.layer a .icon>path {
     color: rgb(53, 136, 204);
 }
 
@@ -376,7 +376,7 @@ nav ul li a:hover::before {
     margin: 0 1rem 0 0;
 }
 
-.contacts-left p .icon > path {
+.contacts-left p .icon>path {
     color: rgb(53, 136, 204);
 }
 
@@ -391,7 +391,7 @@ nav ul li a:hover::before {
     margin: 1rem .75rem;
 }
 
-.social-icons a  {
+.social-icons a {
     transition: 750ms ease-in-out;
 }
 
@@ -399,11 +399,11 @@ nav ul li a:hover::before {
     transform: translateY(-5px);
 }
 
-.social-icons .icon > path {
+.social-icons .icon>path {
     transition: 750ms ease-in-out;
 }
 
-.social-icons .icon:hover > path {
+.social-icons .icon:hover>path {
     color: rgb(53, 136, 204);
     transform: translateY(-5px);
 }
@@ -469,7 +469,8 @@ nav .icon {
     display: none;
 }
 
-@media (width <= 1500px) {
+@media (width <=1500px) {
+
     #about,
     #projects,
     #contacts {
@@ -497,7 +498,7 @@ nav .icon {
     }
 }
 
-@media (width <= 660px) {
+@media (width <=660px) {
     .sub-title {
         font-size: 2.5rem;
     }
@@ -593,7 +594,7 @@ nav .icon {
     .about-col1 i {
         font-size: 2.5rem;
     }
-    
+
     .about-text {
         margin: .5rem 0;
     }
@@ -628,11 +629,11 @@ nav .icon {
     .layer h1 {
         font-size: 3rem;
     }
-    
+
     .layer p {
         font-size: 1.5rem;
     }
-    
+
     .layer a i {
         font-size: 2rem;
         color: rgb(53, 136, 204);
@@ -643,7 +644,7 @@ nav .icon {
     #contacts {
         height: auto;
     }
-    
+
     .contacts-left {
         margin: 0;
     }
@@ -666,7 +667,7 @@ nav .icon {
     }
 }
 
-@media screen and (orientation: landscape) and (width <= 1000px) and (height <= 550px) {
+@media screen and (orientation: landscape) and (width <=1000px) and (height <=550px) {
     .header-text h1 {
         font-size: 3rem;
     }
