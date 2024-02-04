@@ -1,18 +1,26 @@
 [
-    {
-        "name": "Chicken Website",
-        "id": "chicken-website",
-        "src": "./assets/chicken-website.webp",
-        "alt": "picture of my chicken website",
-        "description": "Website, dedicated to chicken, created using vanilla HTML, CSS, JavaScript and PHP for the server side",
-        "link": "https://github.com/P1l3T0/Chicken-Website"
-    },
-    {
-        "name": "2D Shape Editor",
-        "id": "paint",
-        "src": "./assets/paint.webp",
-        "alt": "picture of my shape editor application",
-        "description": "Application for creating 2D shapes and drawing with freehand, using vector graphics, created with C# and Windows Forms",
-        "link": "https://github.com/P1l3T0/2D-Shape-Editor"
-    }
+  {
+    "name": "iFitTracker",
+    "id": "ifit-tracker",
+    "src": "./assets/ifittracker.webp",
+    "alt": "picture of a mobile application I particiapted in",
+    "description": "Application for tracking people's health and fitness activities, developed with .NET Core Web API and Swift",
+    "link": "https://github.com/SimeonTsekov/TU_ST"
+  },
+  {
+    "name": "Chicken Website",
+    "id": "chicken-website",
+    "src": "./assets/chicken-website.webp",
+    "alt": "picture of my chicken website",
+    "description": "Website, dedicated to chicken, developed using vanilla HTML, CSS, JavaScript and PHP for the server side",
+    "link": "https://github.com/P1l3T0/Chicken-Website"
+  },
+  {
+    "name": "2D Shape Editor",
+    "id": "paint",
+    "src": "./assets/paint.webp",
+    "alt": "picture of my shape editor application",
+    "description": "Application for creating 2D shapes and freehand drawing, using vector graphics, developed with C# and Windows Forms",
+    "link": "https://github.com/P1l3T0/2D-Shape-Editor"
+  }
 ]
